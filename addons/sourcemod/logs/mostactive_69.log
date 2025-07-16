@@ -1,0 +1,13 @@
+L 07/13/2025 - 09:50:01: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/13/2025 - 09:50:01: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750125001' AND `last_accountuse`>'0';
+L 07/13/2025 - 10:31:04: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/13/2025 - 10:31:16: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:919518965'
+L 07/13/2025 - 10:31:16: Query INSERT INTO mostactive(playername, steamid, last_accountuse, timeCT, timeTT, timeSPE, total) VALUES('囧囧囧囧囧猫', 'STEAM_1:0:919518965', '1752373876', '0', '0', '0', '0');
+L 07/13/2025 - 10:31:18: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:631481250'
+L 07/13/2025 - 10:31:29: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/13/2025 - 10:31:40: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:752993704'
+L 07/13/2025 - 10:32:13: Query UPDATE mostactive SET last_accountuse = 1752373933, playername = 'ᗜ◡ᗜ',timeCT = '7559',timeTT = '8777', timeSPE = '344',total = '16680' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/13/2025 - 10:32:13: Query UPDATE mostactive SET last_accountuse = 1752373933, playername = 'Kobe Bryant',timeCT = '7617',timeTT = '6932', timeSPE = '512',total = '15061' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/13/2025 - 10:32:13: Query UPDATE mostactive SET last_accountuse = 1752373933, playername = '囧囧囧囧囧猫',timeCT = '55',timeTT = '0', timeSPE = '1',total = '56' WHERE steamid = 'STEAM_1:0:919518965';
+L 07/13/2025 - 10:32:13: Query UPDATE mostactive SET last_accountuse = 1752373933, playername = 'Yy',timeCT = '2714',timeTT = '2277', timeSPE = '26',total = '5017' WHERE steamid = 'STEAM_1:0:631481250';
+L 07/13/2025 - 10:32:13: Query UPDATE mostactive SET last_accountuse = 1752373933, playername = '(S)洛琪希是可爱的定义',timeCT = '1077',timeTT = '1446', timeSPE = '1652',total = '4175' WHERE steamid = 'STEAM_1:1:752993704';

@@ -1,0 +1,2 @@
+L 07/12/2025 - 18:38:49: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/12/2025 - 18:38:49: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750070329' AND `last_accountuse`>'0';

@@ -1,0 +1,6 @@
+L 07/13/2025 - 11:47:11: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/13/2025 - 11:47:11: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750132031' AND `last_accountuse`>'0';
+L 07/13/2025 - 13:28:19: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/13/2025 - 13:50:16: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/13/2025 - 13:57:50: Query UPDATE mostactive SET last_accountuse = 1752386270, playername = 'po but mutation',timeCT = '116',timeTT = '241', timeSPE = '2074',total = '2431' WHERE steamid = 'STEAM_1:1:616323251';
+L 07/13/2025 - 14:03:11: Query UPDATE mostactive SET last_accountuse = 1752386591, playername = 'Kobe Bryant',timeCT = '8295',timeTT = '10435', timeSPE = '536',total = '19266' WHERE steamid = 'STEAM_1:1:801237070';

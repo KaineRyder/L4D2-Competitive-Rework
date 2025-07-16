@@ -1,0 +1,351 @@
+L 07/13/2025 - 01:27:59: SourceMod error session started
+L 07/13/2025 - 01:27:59: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 01:27:59: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 01:28:06: Error log file session closed.
+L 07/13/2025 - 01:43:17: SourceMod error session started
+L 07/13/2025 - 01:43:17: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 01:43:17: [SM] Exception reported: Client index -1 is invalid
+L 07/13/2025 - 01:43:17: [SM] Blaming: optional/l4d2_tank_facts_announce.smx
+L 07/13/2025 - 01:43:17: [SM] Call stack trace:
+L 07/13/2025 - 01:43:17: [SM]   [0] IsClientInGame
+L 07/13/2025 - 01:43:17: [SM]   [1] Line 348, J:\Documents\GitHub\MoYu_Server_Stupid_Plugins\The Last Stand\l4d2_tank_facts_announce\l4d2_tank_facts_announce.sp::GetTankClient
+L 07/13/2025 - 01:43:17: [SM]   [2] Line 260, J:\Documents\GitHub\MoYu_Server_Stupid_Plugins\The Last Stand\l4d2_tank_facts_announce\l4d2_tank_facts_announce.sp::PrintTankSkill
+L 07/13/2025 - 01:43:17: [SM]   [3] Line 107, J:\Documents\GitHub\MoYu_Server_Stupid_Plugins\The Last Stand\l4d2_tank_facts_announce\l4d2_tank_facts_announce.sp::Event_OnRoundEnd
+L 07/13/2025 - 01:43:32: [SM] Exception reported: Client index -1 is invalid
+L 07/13/2025 - 01:43:32: [SM] Blaming: optional/l4d2_tank_facts_announce.smx
+L 07/13/2025 - 01:43:32: [SM] Call stack trace:
+L 07/13/2025 - 01:43:32: [SM]   [0] IsClientInGame
+L 07/13/2025 - 01:43:32: [SM]   [1] Line 348, J:\Documents\GitHub\MoYu_Server_Stupid_Plugins\The Last Stand\l4d2_tank_facts_announce\l4d2_tank_facts_announce.sp::GetTankClient
+L 07/13/2025 - 01:43:32: [SM]   [2] Line 260, J:\Documents\GitHub\MoYu_Server_Stupid_Plugins\The Last Stand\l4d2_tank_facts_announce\l4d2_tank_facts_announce.sp::PrintTankSkill
+L 07/13/2025 - 01:43:32: [SM]   [3] Line 107, J:\Documents\GitHub\MoYu_Server_Stupid_Plugins\The Last Stand\l4d2_tank_facts_announce\l4d2_tank_facts_announce.sp::Event_OnRoundEnd
+L 07/13/2025 - 01:52:41: Error log file session closed.
+L 07/13/2025 - 01:52:43: SourceMod error session started
+L 07/13/2025 - 01:52:43: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 01:52:43: [optional/mostactive.smx] Query failure: Incorrect string value: '\xE8\xE8S\x85(S...' for column 'playername' at row 1
+L 07/13/2025 - 02:11:23: SourceMod error session started
+L 07/13/2025 - 02:11:23: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 02:11:23: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 02:11:30: Error log file session closed.
+L 07/13/2025 - 09:32:47: SourceMod error session started
+L 07/13/2025 - 09:32:47: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 09:32:47: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 09:32:55: Error log file session closed.
+L 07/13/2025 - 09:49:58: SourceMod error session started
+L 07/13/2025 - 09:49:58: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 09:49:58: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 09:50:05: Error log file session closed.
+L 07/13/2025 - 10:32:13: SourceMod error session started
+L 07/13/2025 - 10:32:13: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 10:32:13: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 10:32:47: Error log file session closed.
+L 07/13/2025 - 11:47:08: SourceMod error session started
+L 07/13/2025 - 11:47:08: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 11:47:08: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 11:47:15: Error log file session closed.
+L 07/13/2025 - 14:10:27: SourceMod error session started
+L 07/13/2025 - 14:10:27: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 14:10:27: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 14:10:34: Error log file session closed.
+L 07/13/2025 - 14:27:51: SourceMod error session started
+L 07/13/2025 - 14:27:51: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 14:27:51: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 14:28:21: Error log file session closed.
+L 07/13/2025 - 15:01:36: SourceMod error session started
+L 07/13/2025 - 15:01:36: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:01:36: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 15:01:42: Error log file session closed.
+L 07/13/2025 - 15:08:04: SourceMod error session started
+L 07/13/2025 - 15:08:04: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:08:04: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 15:08:04: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 15:08:04: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 15:08:04: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:08:04: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:08:50: Error log file session closed.
+L 07/13/2025 - 15:08:50: SourceMod error session started
+L 07/13/2025 - 15:08:50: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:08:50: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:08:50: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:09:19: SourceMod error session started
+L 07/13/2025 - 15:09:19: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:09:19: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 15:09:19: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 15:09:19: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 15:09:19: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:09:19: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:09:26: Error log file session closed.
+L 07/13/2025 - 15:09:26: SourceMod error session started
+L 07/13/2025 - 15:09:26: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:09:26: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:09:26: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:11:05: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 15:11:05: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 15:11:05: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 15:11:26: Error log file session closed.
+L 07/13/2025 - 15:11:26: SourceMod error session started
+L 07/13/2025 - 15:11:26: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:11:26: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:11:26: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:26:22: Error log file session closed.
+L 07/13/2025 - 15:26:22: SourceMod error session started
+L 07/13/2025 - 15:26:22: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:26:22: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:26:22: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:34:46: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 15:34:46: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 15:34:46: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 15:35:21: Error log file session closed.
+L 07/13/2025 - 15:35:21: SourceMod error session started
+L 07/13/2025 - 15:35:21: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:35:21: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:35:21: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:36:00: Error log file session closed.
+L 07/13/2025 - 15:36:00: SourceMod error session started
+L 07/13/2025 - 15:36:00: Info (map "c1m1_hotel") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:36:00: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:36:00: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:43:25: Error log file session closed.
+L 07/13/2025 - 15:43:25: SourceMod error session started
+L 07/13/2025 - 15:43:25: Info (map "c1m1_hotel") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:43:25: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:43:25: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 15:47:43: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 15:47:44: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 15:47:44: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 15:48:15: Error log file session closed.
+L 07/13/2025 - 15:48:15: SourceMod error session started
+L 07/13/2025 - 15:48:15: Info (map "c1m1_hotel") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 15:48:15: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 15:48:15: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:00:40: Error log file session closed.
+L 07/13/2025 - 16:00:40: SourceMod error session started
+L 07/13/2025 - 16:00:40: Info (map "c1m2_streets") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:00:40: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:00:40: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:07:58: Error log file session closed.
+L 07/13/2025 - 16:07:58: SourceMod error session started
+L 07/13/2025 - 16:07:58: Info (map "c1m3_mall") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:07:58: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:07:58: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:21:37: Error log file session closed.
+L 07/13/2025 - 16:21:37: SourceMod error session started
+L 07/13/2025 - 16:21:37: Info (map "c1m4_atrium") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:21:37: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:21:37: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:22:06: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 16:22:07: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 16:22:07: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 16:22:57: Error log file session closed.
+L 07/13/2025 - 16:22:57: SourceMod error session started
+L 07/13/2025 - 16:22:57: Info (map "c1m4_atrium") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:22:57: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:22:57: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:23:19: Error log file session closed.
+L 07/13/2025 - 16:23:19: SourceMod error session started
+L 07/13/2025 - 16:23:19: Info (map "c1m1_hotel") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:23:19: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:23:19: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:24:43: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 16:24:43: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 16:24:43: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 16:24:54: Error log file session closed.
+L 07/13/2025 - 16:24:54: SourceMod error session started
+L 07/13/2025 - 16:24:54: Info (map "c1m1_hotel") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:24:54: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:24:54: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:25:54: Error log file session closed.
+L 07/13/2025 - 16:25:54: SourceMod error session started
+L 07/13/2025 - 16:25:54: Info (map "c5m1_waterfront") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:25:54: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:25:54: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:39:02: Error log file session closed.
+L 07/13/2025 - 16:39:02: SourceMod error session started
+L 07/13/2025 - 16:39:02: Info (map "c5m2_park") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:39:02: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:39:02: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 16:50:46: Error log file session closed.
+L 07/13/2025 - 16:50:46: SourceMod error session started
+L 07/13/2025 - 16:50:46: Info (map "c5m3_cemetery") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 16:50:46: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 16:50:46: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 17:02:50: Error log file session closed.
+L 07/13/2025 - 17:02:50: SourceMod error session started
+L 07/13/2025 - 17:02:50: Info (map "c5m4_quarter") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 17:02:50: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 17:02:50: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 17:13:23: Error log file session closed.
+L 07/13/2025 - 17:13:23: SourceMod error session started
+L 07/13/2025 - 17:13:23: Info (map "c5m5_bridge") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 17:13:23: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 17:13:23: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 17:14:06: Error log file session closed.
+L 07/13/2025 - 17:14:06: SourceMod error session started
+L 07/13/2025 - 17:14:06: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 17:14:06: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 17:14:06: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 17:22:47: Error log file session closed.
+L 07/13/2025 - 17:22:47: SourceMod error session started
+L 07/13/2025 - 17:22:47: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 17:22:47: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 17:22:47: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 17:30:35: Error log file session closed.
+L 07/13/2025 - 17:30:35: SourceMod error session started
+L 07/13/2025 - 17:30:35: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 17:30:35: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 17:30:35: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 17:54:05: Error log file session closed.
+L 07/13/2025 - 17:54:05: SourceMod error session started
+L 07/13/2025 - 17:54:05: Info (map "c2m3_coaster") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 17:54:05: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 17:54:05: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 17:55:35: Error log file session closed.
+L 07/13/2025 - 17:55:35: SourceMod error session started
+L 07/13/2025 - 17:55:35: Info (map "c2m3_coaster") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 17:55:35: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 17:55:35: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 17:59:35: Error log file session closed.
+L 07/13/2025 - 17:59:35: SourceMod error session started
+L 07/13/2025 - 17:59:35: Info (map "c2m3_coaster") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 17:59:35: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 17:59:35: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 18:06:53: Error log file session closed.
+L 07/13/2025 - 18:06:53: SourceMod error session started
+L 07/13/2025 - 18:06:53: Info (map "c2m4_barns") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 18:06:53: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 18:06:53: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 18:17:10: SourceMod error session started
+L 07/13/2025 - 18:17:10: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 18:17:10: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 18:17:10: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 18:17:10: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 18:17:10: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 18:17:10: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 18:17:17: Error log file session closed.
+L 07/13/2025 - 18:17:17: SourceMod error session started
+L 07/13/2025 - 18:17:17: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 18:17:17: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 18:17:17: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 18:32:07: SourceMod error session started
+L 07/13/2025 - 18:32:07: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 18:32:07: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 18:32:07: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 18:32:07: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 18:32:07: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 18:32:07: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 18:32:14: Error log file session closed.
+L 07/13/2025 - 18:32:14: SourceMod error session started
+L 07/13/2025 - 18:32:14: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 18:32:14: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 18:32:14: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 18:46:49: SourceMod error session started
+L 07/13/2025 - 18:46:49: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 18:46:49: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 18:46:49: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 18:46:49: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 18:46:49: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 18:46:49: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 18:46:56: Error log file session closed.
+L 07/13/2025 - 18:46:56: SourceMod error session started
+L 07/13/2025 - 18:46:56: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 18:46:56: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 18:46:56: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 19:13:42: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 19:13:43: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 19:13:43: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 19:13:50: Error log file session closed.
+L 07/13/2025 - 19:13:50: SourceMod error session started
+L 07/13/2025 - 19:13:50: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 19:13:50: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 19:13:50: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 19:16:34: SourceMod error session started
+L 07/13/2025 - 19:16:34: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 19:16:34: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 19:16:34: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 19:16:34: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 19:16:34: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 19:16:34: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 19:16:41: Error log file session closed.
+L 07/13/2025 - 19:16:41: SourceMod error session started
+L 07/13/2025 - 19:16:41: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 19:16:41: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 19:16:41: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 19:20:24: SourceMod error session started
+L 07/13/2025 - 19:20:24: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 19:20:24: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 19:20:24: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 19:20:24: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 19:20:24: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 19:20:24: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 19:20:31: Error log file session closed.
+L 07/13/2025 - 19:20:31: SourceMod error session started
+L 07/13/2025 - 19:20:31: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 19:20:31: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 19:20:31: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 19:43:25: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 19:43:25: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 19:43:25: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 19:43:45: Error log file session closed.
+L 07/13/2025 - 19:43:45: SourceMod error session started
+L 07/13/2025 - 19:43:45: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 19:43:45: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 19:43:45: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 20:15:58: Error log file session closed.
+L 07/13/2025 - 20:15:58: SourceMod error session started
+L 07/13/2025 - 20:15:58: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 20:15:58: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 20:15:58: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 20:26:47: Error log file session closed.
+L 07/13/2025 - 20:26:47: SourceMod error session started
+L 07/13/2025 - 20:26:47: Info (map "c2m3_coaster") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 20:26:47: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 20:26:47: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 20:46:09: Error log file session closed.
+L 07/13/2025 - 20:46:09: SourceMod error session started
+L 07/13/2025 - 20:46:09: Info (map "c2m4_barns") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 20:46:09: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 20:46:09: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 21:02:24: Error log file session closed.
+L 07/13/2025 - 21:02:24: SourceMod error session started
+L 07/13/2025 - 21:02:24: Info (map "c2m5_concert") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 21:02:24: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 21:02:24: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 21:22:20: SourceMod error session started
+L 07/13/2025 - 21:22:20: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 21:22:20: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 21:22:21: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 21:22:21: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 21:22:21: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 21:22:21: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 21:22:27: Error log file session closed.
+L 07/13/2025 - 21:22:27: SourceMod error session started
+L 07/13/2025 - 21:22:27: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 21:22:27: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 21:22:27: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 21:24:38: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 21:24:38: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 21:24:38: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 22:14:00: SourceMod error session started
+L 07/13/2025 - 22:14:00: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 22:14:00: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 22:14:01: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 22:14:01: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 22:14:01: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 22:14:01: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 22:14:07: Error log file session closed.
+L 07/13/2025 - 22:14:07: SourceMod error session started
+L 07/13/2025 - 22:14:07: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 22:14:07: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 22:14:07: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 22:28:16: SourceMod error session started
+L 07/13/2025 - 22:28:16: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 22:28:16: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/13/2025 - 22:28:16: [SM] Unable to load plugin "sae/l4d2_hybrid_scoremod_sae.smx": Could not find required plugin "l4d2lib"
+L 07/13/2025 - 22:28:16: [SM] Unable to load plugin "sae/spechud.smx": Native "LM_GetLerpTime" was not found
+L 07/13/2025 - 22:28:16: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 22:28:16: [SM] Error (line 0, column 0): Stream failed to open
+L 07/13/2025 - 22:28:23: Error log file session closed.
+L 07/13/2025 - 22:28:23: SourceMod error session started
+L 07/13/2025 - 22:28:23: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250713.log")
+L 07/13/2025 - 22:28:23: [SM] Fatal error encountered parsing translation file "l4d_splash_damage.phrases.txt"
+L 07/13/2025 - 22:28:23: [SM] Error (line 0, column 0): Stream failed to open
+L 07/14/2025 - 11:40:32: Error log file session closed.

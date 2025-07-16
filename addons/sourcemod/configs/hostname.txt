@@ -1,0 +1,9 @@
+ServerName
+{
+	"721"
+	{
+		"baseName"	"GLHF TO GGWP"
+	}
+	
+	
+}

@@ -1,0 +1,559 @@
+L 07/11/2025 - 00:33:03: SourceMod error session started
+L 07/11/2025 - 00:33:03: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 00:33:03: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 00:33:06: [optional/l4d2_simpleplayerstats.smx] [ERROR] Failed to connect to database: [1045]: Access denied for user 'l4d2_user'@'localhost' (using password: YES)
+L 07/11/2025 - 00:33:06: [optional/l4d2_simpleplayerstats.smx] [ERROR] InitDatabase :: Unable to retrieve database handle
+L 07/11/2025 - 00:33:06: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not connect to the database. Please check your database configuration file and make sure everything is configured correctly. (db section name: playerstats)
+L 07/11/2025 - 00:33:06: [SM] Exception reported: Could not connect to the database
+L 07/11/2025 - 00:33:06: [SM] Blaming: optional/l4d2_simpleplayerstats.smx
+L 07/11/2025 - 00:33:06: [SM] Call stack trace:
+L 07/11/2025 - 00:33:06: [SM]   [0] SetFailState
+L 07/11/2025 - 00:33:06: [SM]   [1] Line 227, D:\Projects\sourcemod\l4d2-player-stats\scripting\l4d2_simpleplayerstats.sp::OnPluginStart
+L 07/11/2025 - 00:33:10: Error log file session closed.
+L 07/11/2025 - 11:00:48: SourceMod error session started
+L 07/11/2025 - 11:00:48: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 11:00:48: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 11:00:50: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/11/2025 - 11:00:50: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/11/2025 - 11:00:50: [UPDATER] Error: Failure when receiving data from the peer
+L 07/11/2025 - 11:00:50: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/11/2025 - 11:00:55: Error log file session closed.
+L 07/11/2025 - 11:03:18: SourceMod error session started
+L 07/11/2025 - 11:03:18: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 11:03:18: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 11:03:24: Error log file session closed.
+L 07/11/2025 - 11:04:53: SourceMod error session started
+L 07/11/2025 - 11:04:53: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 11:04:53: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 11:24:12: SourceMod error session started
+L 07/11/2025 - 11:24:12: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 11:24:12: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 11:24:19: Error log file session closed.
+L 07/11/2025 - 11:25:24: SourceMod error session started
+L 07/11/2025 - 11:25:24: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 11:25:24: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 11:25:31: Error log file session closed.
+L 07/11/2025 - 11:41:37: SourceMod error session started
+L 07/11/2025 - 11:41:37: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 11:41:37: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 11:41:40: [optional/l4d2_simpleplayerstats.smx] [ERROR] Failed to connect to database: [1045]: Access denied for user 'l4d2_user'@'localhost' (using password: YES)
+L 07/11/2025 - 11:41:40: [optional/l4d2_simpleplayerstats.smx] [ERROR] InitDatabase :: Unable to retrieve database handle
+L 07/11/2025 - 11:41:40: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not connect to the database. Please check your database configuration file and make sure everything is configured correctly. (db section name: playerstats)
+L 07/11/2025 - 11:41:40: [SM] Exception reported: Could not connect to the database
+L 07/11/2025 - 11:41:40: [SM] Blaming: optional/l4d2_simpleplayerstats.smx
+L 07/11/2025 - 11:41:40: [SM] Call stack trace:
+L 07/11/2025 - 11:41:40: [SM]   [0] SetFailState
+L 07/11/2025 - 11:41:40: [SM]   [1] Line 227, D:\Projects\sourcemod\l4d2-player-stats\scripting\l4d2_simpleplayerstats.sp::OnPluginStart
+L 07/11/2025 - 11:41:44: Error log file session closed.
+L 07/11/2025 - 11:45:15: SourceMod error session started
+L 07/11/2025 - 11:45:15: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 11:45:15: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 11:45:22: Error log file session closed.
+L 07/11/2025 - 12:02:56: SourceMod error session started
+L 07/11/2025 - 12:02:56: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 12:02:56: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 12:03:03: Error log file session closed.
+L 07/11/2025 - 12:04:26: SourceMod error session started
+L 07/11/2025 - 12:04:26: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 12:04:26: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 12:06:51: Error log file session closed.
+L 07/11/2025 - 12:07:05: SourceMod error session started
+L 07/11/2025 - 12:07:05: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 12:07:05: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 12:10:50: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 12:16:29: Error log file session closed.
+L 07/11/2025 - 12:40:53: SourceMod error session started
+L 07/11/2025 - 12:40:53: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 12:40:53: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 12:41:00: Error log file session closed.
+L 07/11/2025 - 12:57:44: SourceMod error session started
+L 07/11/2025 - 12:57:44: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 12:57:44: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 12:57:51: Error log file session closed.
+L 07/11/2025 - 12:59:42: SourceMod error session started
+L 07/11/2025 - 12:59:42: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 12:59:42: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 12:59:49: Error log file session closed.
+L 07/11/2025 - 13:03:24: SourceMod error session started
+L 07/11/2025 - 13:03:24: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:03:24: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:03:31: Error log file session closed.
+L 07/11/2025 - 13:03:44: SourceMod error session started
+L 07/11/2025 - 13:03:44: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:03:44: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not obtain steam id of client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 13:03:47: [optional/l4d2_simpleplayerstats.smx] [ERROR] Unable to retrieve a valid steam id from client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 13:03:50: [optional/l4d2_simpleplayerstats.smx] [ERROR] Unable to retrieve a valid steam id from client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 13:03:51: [optional/l4d2_simpleplayerstats.smx] [ERROR] ShowInGamePlayerRanks :: Could not retrieve a valid steam id for 'ç´™é£›è¡Œæ©Ÿ'
+L 07/11/2025 - 13:04:14: SourceMod error session started
+L 07/11/2025 - 13:04:14: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:04:14: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:04:21: Error log file session closed.
+L 07/11/2025 - 13:07:56: SourceMod error session started
+L 07/11/2025 - 13:07:56: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:07:56: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:08:03: Error log file session closed.
+L 07/11/2025 - 13:08:43: SourceMod error session started
+L 07/11/2025 - 13:08:43: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:08:43: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:08:50: Error log file session closed.
+L 07/11/2025 - 13:15:08: SourceMod error session started
+L 07/11/2025 - 13:15:08: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:15:08: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:15:14: Error log file session closed.
+L 07/11/2025 - 13:22:09: SourceMod error session started
+L 07/11/2025 - 13:22:09: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:22:09: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 13:23:27: SourceMod error session started
+L 07/11/2025 - 13:23:27: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:23:27: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:23:33: Error log file session closed.
+L 07/11/2025 - 13:26:18: SourceMod error session started
+L 07/11/2025 - 13:26:18: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:26:18: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:26:25: Error log file session closed.
+L 07/11/2025 - 13:26:38: SourceMod error session started
+L 07/11/2025 - 13:26:38: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:26:38: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not obtain steam id of client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 13:26:44: [optional/l4d2_simpleplayerstats.smx] [ERROR] Unable to retrieve a valid steam id from client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 13:38:04: SourceMod error session started
+L 07/11/2025 - 13:38:04: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:38:04: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:38:07: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:07: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:07: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:07: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:10: Error log file session closed.
+L 07/11/2025 - 13:38:12: SourceMod error session started
+L 07/11/2025 - 13:38:12: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:38:12: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:40:47: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_PlayerConnectAnnounce :: Query failed (Reason: View 'l4d2stats.STATS_VW_PLAYER_RANKS_EXTRAS' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them)
+L 07/11/2025 - 13:40:50: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_ShowPlayerRankPanel :: Query failed (Reason: View 'l4d2stats.STATS_VW_PLAYER_RANKS_EXTRAS' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them)
+L 07/11/2025 - 13:40:58: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_ShowPlayerRankPanel :: Query failed (Reason: View 'l4d2stats.STATS_VW_PLAYER_RANKS_EXTRAS' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them)
+L 07/11/2025 - 13:41:16: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_PlayerConnectAnnounce :: Query failed (Reason: View 'l4d2stats.STATS_VW_PLAYER_RANKS_EXTRAS' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them)
+L 07/11/2025 - 13:41:17: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_ShowPlayerRankPanel :: Query failed (Reason: View 'l4d2stats.STATS_VW_PLAYER_RANKS_EXTRAS' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them)
+L 07/11/2025 - 13:42:25: SourceMod error session started
+L 07/11/2025 - 13:42:25: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:42:25: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 13:42:29: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:29: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:29: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:29: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:32: Error log file session closed.
+L 07/11/2025 - 13:42:33: SourceMod error session started
+L 07/11/2025 - 13:42:33: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 13:42:33: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:33: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:33: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:33: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:33: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:33: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 13:42:34: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:10:20: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_PlayerConnectAnnounce :: Query failed (Reason: View 'l4d2stats.STATS_VW_PLAYER_RANKS_EXTRAS' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them)
+L 07/11/2025 - 14:10:21: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 14:10:27: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_ShowPlayerRankPanel :: Query failed (Reason: View 'l4d2stats.STATS_VW_PLAYER_RANKS_EXTRAS' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them)
+L 07/11/2025 - 14:10:56: SourceMod error session started
+L 07/11/2025 - 14:10:56: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 14:10:56: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 14:10:59: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:10:59: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:10:59: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:10:59: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:02: Error log file session closed.
+L 07/11/2025 - 14:11:04: SourceMod error session started
+L 07/11/2025 - 14:11:04: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 14:11:04: [optional/l4d2_simpleplayerstats.smx] [ERROR] TQ_SyncStatModifiers :: Query failed (Reason: Unknown column 'name' in 'field list')
+L 07/11/2025 - 15:45:31: [optional/l4d2_simpleplayerstats.smx] [ERROR] ShowExtraStatsMenuHandler :: Client id 1 is no longer valid (Player has probably left the server before the completion of this request)
+L 07/11/2025 - 15:45:46: SourceMod error session started
+L 07/11/2025 - 15:45:46: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 15:45:46: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 15:45:53: Error log file session closed.
+L 07/11/2025 - 16:36:54: SourceMod error session started
+L 07/11/2025 - 16:36:54: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 16:36:54: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 16:36:55: [mostactive.smx] Database failure: Could not find database config "mostactive"
+L 07/11/2025 - 16:36:55: [SM] Exception reported: Databases dont work
+L 07/11/2025 - 16:36:55: [SM] Blaming: mostactive.smx
+L 07/11/2025 - 16:36:55: [SM] Call stack trace:
+L 07/11/2025 - 16:36:55: [SM]   [0] SetFailState
+L 07/11/2025 - 16:36:55: [SM]   [1] Line 93, D:\360°²È«ä¯ÀÀÆ÷ÏÂÔØ\mostactive.sp::OnSQLConnect
+L 07/11/2025 - 16:37:12: Error log file session closed.
+L 07/11/2025 - 16:37:23: SourceMod error session started
+L 07/11/2025 - 16:37:23: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 16:37:23: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 16:37:51: Error log file session closed.
+L 07/11/2025 - 16:39:01: SourceMod error session started
+L 07/11/2025 - 16:39:01: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 16:39:01: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 16:39:04: [mostactive.smx] Database failure: [2002]: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+L 07/11/2025 - 16:39:04: [SM] Exception reported: Databases dont work
+L 07/11/2025 - 16:39:04: [SM] Blaming: mostactive.smx
+L 07/11/2025 - 16:39:04: [SM] Call stack trace:
+L 07/11/2025 - 16:39:04: [SM]   [0] SetFailState
+L 07/11/2025 - 16:39:04: [SM]   [1] Line 93, D:\360°²È«ä¯ÀÀÆ÷ÏÂÔØ\mostactive.sp::OnSQLConnect
+L 07/11/2025 - 16:39:08: Error log file session closed.
+L 07/11/2025 - 16:47:17: SourceMod error session started
+L 07/11/2025 - 16:47:17: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 16:47:17: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 16:47:20: [optional/mostactive.smx] Database failure: [2002]: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+L 07/11/2025 - 16:47:20: [SM] Exception reported: Databases dont work
+L 07/11/2025 - 16:47:20: [SM] Blaming: optional/mostactive.smx
+L 07/11/2025 - 16:47:20: [SM] Call stack trace:
+L 07/11/2025 - 16:47:20: [SM]   [0] SetFailState
+L 07/11/2025 - 16:47:20: [SM]   [1] Line 93, D:\360°²È«ä¯ÀÀÆ÷ÏÂÔØ\mostactive.sp::OnSQLConnect
+L 07/11/2025 - 16:47:24: Error log file session closed.
+L 07/11/2025 - 16:56:21: SourceMod error session started
+L 07/11/2025 - 16:56:21: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 16:56:21: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 16:56:28: Error log file session closed.
+L 07/11/2025 - 16:57:55: SourceMod error session started
+L 07/11/2025 - 16:57:55: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 16:57:55: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 16:58:02: Error log file session closed.
+L 07/11/2025 - 17:03:22: SourceMod error session started
+L 07/11/2025 - 17:03:22: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:03:22: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:03:29: Error log file session closed.
+L 07/11/2025 - 17:11:30: SourceMod error session started
+L 07/11/2025 - 17:11:30: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:11:30: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:11:37: Error log file session closed.
+L 07/11/2025 - 17:15:25: SourceMod error session started
+L 07/11/2025 - 17:15:25: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:15:25: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:15:32: Error log file session closed.
+L 07/11/2025 - 17:16:43: SourceMod error session started
+L 07/11/2025 - 17:16:43: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:16:43: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:16:50: Error log file session closed.
+L 07/11/2025 - 17:23:53: SourceMod error session started
+L 07/11/2025 - 17:23:53: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:23:53: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:24:00: Error log file session closed.
+L 07/11/2025 - 17:26:59: SourceMod error session started
+L 07/11/2025 - 17:26:59: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:26:59: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:27:06: Error log file session closed.
+L 07/11/2025 - 17:31:17: SourceMod error session started
+L 07/11/2025 - 17:31:17: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:31:17: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:31:24: Error log file session closed.
+L 07/11/2025 - 17:38:29: SourceMod error session started
+L 07/11/2025 - 17:38:29: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:38:29: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 17:39:09: SourceMod error session started
+L 07/11/2025 - 17:39:09: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:39:09: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:39:16: Error log file session closed.
+L 07/11/2025 - 17:39:31: SourceMod error session started
+L 07/11/2025 - 17:39:31: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:39:31: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not obtain steam id of client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 17:46:15: SourceMod error session started
+L 07/11/2025 - 17:46:15: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:46:15: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:46:22: Error log file session closed.
+L 07/11/2025 - 17:46:36: SourceMod error session started
+L 07/11/2025 - 17:46:36: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:46:36: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not obtain steam id of client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 17:49:40: SourceMod error session started
+L 07/11/2025 - 17:49:40: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:49:40: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:49:46: Error log file session closed.
+L 07/11/2025 - 17:54:28: SourceMod error session started
+L 07/11/2025 - 17:54:28: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:54:28: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:54:35: Error log file session closed.
+L 07/11/2025 - 17:59:12: SourceMod error session started
+L 07/11/2025 - 17:59:12: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 17:59:12: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 17:59:19: Error log file session closed.
+L 07/11/2025 - 18:02:28: SourceMod error session started
+L 07/11/2025 - 18:02:28: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:02:28: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 18:02:35: Error log file session closed.
+L 07/11/2025 - 18:03:57: SourceMod error session started
+L 07/11/2025 - 18:03:57: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:03:57: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 18:04:04: Error log file session closed.
+L 07/11/2025 - 18:05:29: SourceMod error session started
+L 07/11/2025 - 18:05:29: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:05:29: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 18:05:36: Error log file session closed.
+L 07/11/2025 - 18:08:41: SourceMod error session started
+L 07/11/2025 - 18:08:41: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:08:41: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 18:08:49: Error log file session closed.
+L 07/11/2025 - 18:09:02: SourceMod error session started
+L 07/11/2025 - 18:09:02: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:09:02: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not obtain steam id of client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 18:09:41: SourceMod error session started
+L 07/11/2025 - 18:09:41: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:09:41: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 18:09:48: Error log file session closed.
+L 07/11/2025 - 18:21:04: SourceMod error session started
+L 07/11/2025 - 18:21:04: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:21:04: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 18:21:11: Error log file session closed.
+L 07/11/2025 - 18:22:00: SourceMod error session started
+L 07/11/2025 - 18:22:00: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:22:00: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 18:22:07: Error log file session closed.
+L 07/11/2025 - 18:31:20: SourceMod error session started
+L 07/11/2025 - 18:31:20: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:31:20: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 18:32:16: Error log file session closed.
+L 07/11/2025 - 18:32:46: SourceMod error session started
+L 07/11/2025 - 18:32:46: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:32:46: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 18:32:50: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 18:39:36: Error log file session closed.
+L 07/11/2025 - 18:43:20: SourceMod error session started
+L 07/11/2025 - 18:43:20: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:43:20: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 18:48:50: Error log file session closed.
+L 07/11/2025 - 18:59:58: SourceMod error session started
+L 07/11/2025 - 18:59:58: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 18:59:58: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 19:00:05: Error log file session closed.
+L 07/11/2025 - 19:09:00: SourceMod error session started
+L 07/11/2025 - 19:09:00: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 19:09:00: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 19:09:07: Error log file session closed.
+L 07/11/2025 - 19:25:21: SourceMod error session started
+L 07/11/2025 - 19:25:21: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 19:25:21: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 19:25:36: Error log file session closed.
+L 07/11/2025 - 19:25:51: SourceMod error session started
+L 07/11/2025 - 19:25:51: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 19:25:51: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 19:29:44: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 19:37:33: Error log file session closed.
+L 07/11/2025 - 19:38:02: SourceMod error session started
+L 07/11/2025 - 19:38:02: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 19:38:02: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 19:38:09: Error log file session closed.
+L 07/11/2025 - 19:38:25: SourceMod error session started
+L 07/11/2025 - 19:38:25: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 19:38:25: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not obtain steam id of client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 19:39:17: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 19:40:08: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 19:40:16: Error log file session closed.
+L 07/11/2025 - 19:40:30: SourceMod error session started
+L 07/11/2025 - 19:40:30: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 19:40:30: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 19:44:28: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 19:50:28: Error log file session closed.
+L 07/11/2025 - 19:50:59: SourceMod error session started
+L 07/11/2025 - 19:50:59: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 19:50:59: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 19:51:06: Error log file session closed.
+L 07/11/2025 - 19:52:56: SourceMod error session started
+L 07/11/2025 - 19:52:56: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 19:52:56: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 19:59:48: [SM] Exception reported: Could not retrieve value for key 'playtime_2weeks'
+L 07/11/2025 - 19:59:48: [SM] Blaming: optional/l4d2_player_time.smx
+L 07/11/2025 - 19:59:48: [SM] Call stack trace:
+L 07/11/2025 - 19:59:48: [SM]   [0] JSONObject.GetInt
+L 07/11/2025 - 19:59:48: [SM]   [1] Line 154, D:\ä¯ÀÀÆ÷ÏÂÔØ\CompetitiveWithAnne-2024-02-25-nomysql\CompetitiveWithAnne-2024-02-25\left4dead2\addons\sourcemod\scripting\l4d2_player_time.sp::HTTPResponse_GetOwnedGames
+L 07/11/2025 - 20:00:07: SourceMod error session started
+L 07/11/2025 - 20:00:07: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:00:07: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:00:14: Error log file session closed.
+L 07/11/2025 - 20:02:44: SourceMod error session started
+L 07/11/2025 - 20:02:44: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:02:44: [SM] Exception reported: Could not retrieve value for key 'playtime_2weeks'
+L 07/11/2025 - 20:02:44: [SM] Blaming: optional/l4d2_player_time.smx
+L 07/11/2025 - 20:02:44: [SM] Call stack trace:
+L 07/11/2025 - 20:02:44: [SM]   [0] JSONObject.GetInt
+L 07/11/2025 - 20:02:44: [SM]   [1] Line 154, D:\ä¯ÀÀÆ÷ÏÂÔØ\CompetitiveWithAnne-2024-02-25-nomysql\CompetitiveWithAnne-2024-02-25\left4dead2\addons\sourcemod\scripting\l4d2_player_time.sp::HTTPResponse_GetOwnedGames
+L 07/11/2025 - 20:03:43: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:03:56: Error log file session closed.
+L 07/11/2025 - 20:04:13: SourceMod error session started
+L 07/11/2025 - 20:04:13: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:04:13: [SM] Exception reported: Could not retrieve value for key 'playtime_2weeks'
+L 07/11/2025 - 20:04:13: [SM] Blaming: optional/l4d2_player_time.smx
+L 07/11/2025 - 20:04:13: [SM] Call stack trace:
+L 07/11/2025 - 20:04:13: [SM]   [0] JSONObject.GetInt
+L 07/11/2025 - 20:04:13: [SM]   [1] Line 154, D:\ä¯ÀÀÆ÷ÏÂÔØ\CompetitiveWithAnne-2024-02-25-nomysql\CompetitiveWithAnne-2024-02-25\left4dead2\addons\sourcemod\scripting\l4d2_player_time.sp::HTTPResponse_GetOwnedGames
+L 07/11/2025 - 20:05:53: Error log file session closed.
+L 07/11/2025 - 20:06:28: SourceMod error session started
+L 07/11/2025 - 20:06:28: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:06:28: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:06:35: Error log file session closed.
+L 07/11/2025 - 20:10:05: SourceMod error session started
+L 07/11/2025 - 20:10:05: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:10:05: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:10:16: Error log file session closed.
+L 07/11/2025 - 20:10:52: SourceMod error session started
+L 07/11/2025 - 20:10:52: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:10:52: [SM] Exception reported: Could not retrieve value for key 'playtime_2weeks'
+L 07/11/2025 - 20:10:52: [SM] Blaming: optional/l4d2_player_time.smx
+L 07/11/2025 - 20:10:52: [SM] Call stack trace:
+L 07/11/2025 - 20:10:52: [SM]   [0] JSONObject.GetInt
+L 07/11/2025 - 20:10:52: [SM]   [1] Line 154, D:\ä¯ÀÀÆ÷ÏÂÔØ\CompetitiveWithAnne-2024-02-25-nomysql\CompetitiveWithAnne-2024-02-25\left4dead2\addons\sourcemod\scripting\l4d2_player_time.sp::HTTPResponse_GetOwnedGames
+L 07/11/2025 - 20:11:11: SourceMod error session started
+L 07/11/2025 - 20:11:11: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:11:11: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:11:17: Error log file session closed.
+L 07/11/2025 - 20:24:37: SourceMod error session started
+L 07/11/2025 - 20:24:37: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:24:37: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:24:43: Error log file session closed.
+L 07/11/2025 - 20:24:57: SourceMod error session started
+L 07/11/2025 - 20:24:57: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:24:57: [optional/l4d2_simpleplayerstats.smx] [ERROR] Could not obtain steam id of client ç´™é£›è¡Œæ©Ÿ
+L 07/11/2025 - 20:26:15: SourceMod error session started
+L 07/11/2025 - 20:26:15: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:26:15: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:26:22: Error log file session closed.
+L 07/11/2025 - 20:26:47: SourceMod error session started
+L 07/11/2025 - 20:26:47: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:26:47: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:26:53: Error log file session closed.
+L 07/11/2025 - 20:34:01: SourceMod error session started
+L 07/11/2025 - 20:34:01: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:34:01: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:34:12: Error log file session closed.
+L 07/11/2025 - 20:36:44: SourceMod error session started
+L 07/11/2025 - 20:36:44: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:36:44: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:36:51: Error log file session closed.
+L 07/11/2025 - 20:37:28: SourceMod error session started
+L 07/11/2025 - 20:37:28: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:37:28: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:37:50: Error log file session closed.
+L 07/11/2025 - 20:38:00: SourceMod error session started
+L 07/11/2025 - 20:38:00: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:38:00: [SM] Exception reported: Could not retrieve value for key 'playtime_2weeks'
+L 07/11/2025 - 20:38:00: [SM] Blaming: optional/l4d2_player_time.smx
+L 07/11/2025 - 20:38:00: [SM] Call stack trace:
+L 07/11/2025 - 20:38:00: [SM]   [0] JSONObject.GetInt
+L 07/11/2025 - 20:38:00: [SM]   [1] Line 154, D:\ä¯ÀÀÆ÷ÏÂÔØ\CompetitiveWithAnne-2024-02-25-nomysql\CompetitiveWithAnne-2024-02-25\left4dead2\addons\sourcemod\scripting\l4d2_player_time.sp::HTTPResponse_GetOwnedGames
+L 07/11/2025 - 20:38:16: Error log file session closed.
+L 07/11/2025 - 20:39:11: SourceMod error session started
+L 07/11/2025 - 20:39:11: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:39:11: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:39:18: Error log file session closed.
+L 07/11/2025 - 20:40:44: SourceMod error session started
+L 07/11/2025 - 20:40:44: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:40:44: [SM] Exception reported: Could not retrieve value for key 'playtime_2weeks'
+L 07/11/2025 - 20:40:44: [SM] Blaming: optional/l4d2_player_time.smx
+L 07/11/2025 - 20:40:44: [SM] Call stack trace:
+L 07/11/2025 - 20:40:44: [SM]   [0] JSONObject.GetInt
+L 07/11/2025 - 20:40:44: [SM]   [1] Line 154, D:\ä¯ÀÀÆ÷ÏÂÔØ\CompetitiveWithAnne-2024-02-25-nomysql\CompetitiveWithAnne-2024-02-25\left4dead2\addons\sourcemod\scripting\l4d2_player_time.sp::HTTPResponse_GetOwnedGames
+L 07/11/2025 - 20:41:03: Error log file session closed.
+L 07/11/2025 - 20:41:46: SourceMod error session started
+L 07/11/2025 - 20:41:46: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:41:46: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 403
+L 07/11/2025 - 20:42:47: SourceMod error session started
+L 07/11/2025 - 20:42:47: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:42:47: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:42:54: Error log file session closed.
+L 07/11/2025 - 20:43:46: SourceMod error session started
+L 07/11/2025 - 20:43:46: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:43:46: [SM] Exception reported: Could not retrieve value for key 'playtime_2weeks'
+L 07/11/2025 - 20:43:46: [SM] Blaming: optional/l4d2_player_time.smx
+L 07/11/2025 - 20:43:46: [SM] Call stack trace:
+L 07/11/2025 - 20:43:46: [SM]   [0] JSONObject.GetInt
+L 07/11/2025 - 20:43:46: [SM]   [1] Line 154, D:\ä¯ÀÀÆ÷ÏÂÔØ\CompetitiveWithAnne-2024-02-25-nomysql\CompetitiveWithAnne-2024-02-25\left4dead2\addons\sourcemod\scripting\l4d2_player_time.sp::HTTPResponse_GetOwnedGames
+L 07/11/2025 - 20:44:14: Error log file session closed.
+L 07/11/2025 - 20:45:40: SourceMod error session started
+L 07/11/2025 - 20:45:40: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:45:40: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:45:51: Error log file session closed.
+L 07/11/2025 - 20:47:10: SourceMod error session started
+L 07/11/2025 - 20:47:10: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:47:10: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:47:16: Error log file session closed.
+L 07/11/2025 - 20:47:36: SourceMod error session started
+L 07/11/2025 - 20:47:36: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:47:36: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:47:49: Error log file session closed.
+L 07/11/2025 - 20:49:14: SourceMod error session started
+L 07/11/2025 - 20:49:14: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:49:14: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:49:21: Error log file session closed.
+L 07/11/2025 - 20:57:57: SourceMod error session started
+L 07/11/2025 - 20:57:57: Info (map "c2m2_fairgrounds") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:57:57: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:58:34: Error log file session closed.
+L 07/11/2025 - 20:59:03: SourceMod error session started
+L 07/11/2025 - 20:59:03: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 20:59:03: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 20:59:10: Error log file session closed.
+L 07/11/2025 - 21:03:46: SourceMod error session started
+L 07/11/2025 - 21:03:46: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 21:03:46: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 21:03:53: Error log file session closed.
+L 07/11/2025 - 21:11:43: SourceMod error session started
+L 07/11/2025 - 21:11:43: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 21:11:43: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 21:11:50: Error log file session closed.
+L 07/11/2025 - 21:13:58: SourceMod error session started
+L 07/11/2025 - 21:13:58: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 21:13:58: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 21:14:05: Error log file session closed.
+L 07/11/2025 - 21:15:55: SourceMod error session started
+L 07/11/2025 - 21:15:55: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 21:15:55: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 21:16:02: Error log file session closed.
+L 07/11/2025 - 21:21:27: SourceMod error session started
+L 07/11/2025 - 21:21:27: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 21:21:27: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 21:21:33: Error log file session closed.
+L 07/11/2025 - 22:46:00: SourceMod error session started
+L 07/11/2025 - 22:46:00: Info (map "c5m5_bridge") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 22:46:00: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 22:46:37: Error log file session closed.
+L 07/11/2025 - 23:31:43: SourceMod error session started
+L 07/11/2025 - 23:31:43: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 23:31:43: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 23:31:50: Error log file session closed.
+L 07/11/2025 - 23:34:45: SourceMod error session started
+L 07/11/2025 - 23:34:45: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250711.log")
+L 07/11/2025 - 23:34:45: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/11/2025 - 23:34:52: Error log file session closed.

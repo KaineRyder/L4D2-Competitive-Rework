@@ -22,6 +22,10 @@
 		{
 			"name" "1v1 ZoneMod"
 		}
+		"zonemodQuad"
+		{
+			"name" "Zonemod Quad"
+		}
 	}
 	"NeoMod Configs"
 	{
@@ -122,6 +126,34 @@
 		"zh1v1"
 		{
 			"name" "1v1 ZoneHunters"
+		}
+	}
+	"Tank Practice"
+	{
+		"TankPractice"
+		{
+			"name" "TankPractice"
+		}
+	}
+	"GoldMod Configs"
+	{
+		"gold"
+		{
+			"name" "GoldMod SAE v1.6.2"
+		}
+	}
+	"InkMod Configs"
+	{
+		"InkMod"
+		{
+			"name" "InkMod 1.4.8"
+		}
+	}
+	"FDreamMod Configs"
+	{
+		"fdream"
+		{
+			"name" "FDreamMod 1.0.1"
 		}
 	}
 }

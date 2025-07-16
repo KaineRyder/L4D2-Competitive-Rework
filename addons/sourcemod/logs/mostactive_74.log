@@ -1,0 +1,26 @@
+L 07/13/2025 - 14:28:18: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/13/2025 - 14:28:18: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750141698' AND `last_accountuse`>'0';
+L 07/13/2025 - 14:28:18: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/13/2025 - 14:28:18: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/13/2025 - 14:28:21: Query UPDATE mostactive SET last_accountuse = 1752388101, playername = 'po but mutation',timeCT = '119',timeTT = '366', timeSPE = '2190',total = '2675' WHERE steamid = 'STEAM_1:1:616323251';
+L 07/13/2025 - 14:28:21: Query UPDATE mostactive SET last_accountuse = 1752388101, playername = 'ᗜ◡ᗜ',timeCT = '8545',timeTT = '9419', timeSPE = '1143',total = '19107' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/13/2025 - 14:28:30: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/13/2025 - 14:28:33: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/13/2025 - 14:35:53: Query UPDATE mostactive SET last_accountuse = 1752388553, playername = 'po but mutation',timeCT = '378',timeTT = '544', timeSPE = '2196',total = '3118' WHERE steamid = 'STEAM_1:1:616323251';
+L 07/13/2025 - 14:35:53: Query UPDATE mostactive SET last_accountuse = 1752388553, playername = 'ᗜ◡ᗜ',timeCT = '8723',timeTT = '9678', timeSPE = '1146',total = '19547' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/13/2025 - 14:36:00: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/13/2025 - 14:36:01: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/13/2025 - 14:43:06: Query UPDATE mostactive SET last_accountuse = 1752388986, playername = 'po but mutation',timeCT = '602',timeTT = '746', timeSPE = '2196',total = '3544' WHERE steamid = 'STEAM_1:1:616323251';
+L 07/13/2025 - 14:43:06: Query UPDATE mostactive SET last_accountuse = 1752388986, playername = 'ᗜ◡ᗜ',timeCT = '8924',timeTT = '9901', timeSPE = '1147',total = '19972' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/13/2025 - 14:43:12: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/13/2025 - 14:43:43: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/13/2025 - 14:51:06: Query UPDATE mostactive SET last_accountuse = 1752389466, playername = 'po but mutation',timeCT = '798',timeTT = '1023', timeSPE = '2196',total = '4017' WHERE steamid = 'STEAM_1:1:616323251';
+L 07/13/2025 - 14:51:06: Query UPDATE mostactive SET last_accountuse = 1752389466, playername = 'ᗜ◡ᗜ',timeCT = '9169',timeTT = '10097', timeSPE = '1148',total = '20414' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/13/2025 - 14:51:15: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/13/2025 - 14:51:16: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/13/2025 - 14:51:58: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:923062785'
+L 07/13/2025 - 15:01:00: Query UPDATE mostactive SET last_accountuse = 1752390060, playername = 'po but mutation',timeCT = '1116',timeTT = '1289', timeSPE = '2196',total = '4601' WHERE steamid = 'STEAM_1:1:616323251';
+L 07/13/2025 - 15:01:03: Query UPDATE mostactive SET last_accountuse = 1752390063, playername = '(S)思',timeCT = '4365',timeTT = '4953', timeSPE = '762',total = '10080' WHERE steamid = 'STEAM_1:0:923062785';
+L 07/13/2025 - 15:01:11: Query UPDATE mostactive SET last_accountuse = 1752390071, playername = 'ᗜ◡ᗜ',timeCT = '9434',timeTT = '10426', timeSPE = '1149',total = '21009' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/13/2025 - 15:01:18: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/13/2025 - 15:01:20: Query UPDATE mostactive SET last_accountuse = 1752390080, playername = 'ᗜ◡ᗜ',timeCT = '9436',timeTT = '10426', timeSPE = '1149',total = '21011' WHERE steamid = 'STEAM_1:1:590841514';

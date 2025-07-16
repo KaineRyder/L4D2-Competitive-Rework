@@ -37,9 +37,9 @@ char sDebugMessage[256];
 public Plugin myinfo =
 {
     name = "L4D2 Auto-pause",
-    author = "Darkid, Griffin, StarterX4, Forgetest, J.",
+    author = "Darkid, Griffin, StarterX4",
     description = "When a player disconnects due to crash, automatically pause the game. When they rejoin, give them a correct spawn timer.",
-    version = "2.3",
+    version = "2.2",
     url = "https://github.com/SirPlease/L4D2-Competitive-Rework"
 }
 
@@ -49,10 +49,11 @@ ConVar
     convarForceUnpause,
     convarDebug;
 
-StringMap
+Handle
     crashedPlayers,
     generalCrashers,
-    teamPlayers;
+    infectedPlayers,
+    survivorPlayers;
 
 bool
     bReadyUpIsAvailable,
@@ -66,9 +67,10 @@ public void OnPluginStart()
     convarForceUnpause = CreateConVar("autopause_forceunpause", "0", "Whether or not we force unpause when the crashed players have loaded back in");
     convarDebug = CreateConVar("autopause_apdebug", "0", "0: No Debugging - 1: Sourcemod Logs - 2: PrintToChat - 3: Both", _, true, 0.0, true, 3.0);
 
-    crashedPlayers = new StringMap();
-    generalCrashers = new StringMap();
-    teamPlayers = new StringMap();
+    crashedPlayers = CreateTrie();
+    generalCrashers = CreateArray(64);
+    infectedPlayers = CreateArray(64);
+    survivorPlayers = CreateArray(64);
 
     HookEvent("round_start", Event_RoundStart);
     HookEvent("round_end", Event_RoundEnd);
@@ -110,11 +112,13 @@ public void OnClientPutInServer(int client)
     if (strcmp(sAuthId, "BOT") == 0) 
         return;
 
-    if (!generalCrashers.ContainsKey(sAuthId)) 
+    int crasherIndex = FindStringInArray(generalCrashers, sAuthId);
+
+    if (crasherIndex == -1) 
         return;
 
-    generalCrashers.Remove(sAuthId);
-    int remainingCrashers = generalCrashers.Size;
+    RemoveFromArray(generalCrashers, crasherIndex);
+    int remainingCrashers = GetArraySize(generalCrashers);
 
     if (convarDebug.BoolValue)
     {
@@ -144,19 +148,12 @@ public void OnClientPutInServer(int client)
     }
 }
 
-public void OnMapEnd()
-{
-    teamPlayers.Clear();
-}
-
 void Event_RoundStart(Event hEvent, char[] sEventName, bool dontBroadcast) 
 {
-    crashedPlayers.Clear();
-    generalCrashers.Clear();
-
-    // @Forgetest: "player_team" happens before "round_start"
-    // teamPlayers.Clear();
-    
+    ClearTrie(crashedPlayers);
+    ClearArray(generalCrashers);
+    ClearArray(infectedPlayers);
+    ClearArray(survivorPlayers);
     bRoundEnd = false;
 }
 
@@ -178,11 +175,36 @@ void Event_PlayerTeam(Event hEvent, char[] sEventName, bool dontBroadcast)
     if (strcmp(sAuthId, "BOT") == 0) 
         return;
 
+    int survivorIndex = FindStringInArray(survivorPlayers, sAuthId);
+    int infectedIndex = FindStringInArray(infectedPlayers, sAuthId);
+
+    if (survivorIndex != -1)
+    {
+        RemoveFromArray(survivorPlayers, survivorIndex);
+
+        if (convarDebug.BoolValue)
+        {
+            Format(sDebugMessage, sizeof(sDebugMessage), "[AutoPause (%s)] Removed player %s from the survivor team.", sEventName, sAuthId);
+            DebugLog(sDebugMessage);
+        }
+    }
+
+    if (infectedIndex != -1)
+    {
+        RemoveFromArray(infectedPlayers, infectedIndex);
+
+        if (convarDebug.BoolValue)
+        {
+            Format(sDebugMessage, sizeof(sDebugMessage), "[AutoPause (%s)] Removed player %s from the infected team.", sEventName, sAuthId);
+            DebugLog(sDebugMessage);
+        }
+    }
+
     int newTeam = hEvent.GetInt("team");
 
     if (newTeam == L4D_TEAM_SURVIVOR)
     {
-        teamPlayers.SetValue(sAuthId, newTeam);
+        PushArrayString(survivorPlayers, sAuthId);
 
         if (convarDebug.BoolValue)
         {
@@ -194,11 +216,11 @@ void Event_PlayerTeam(Event hEvent, char[] sEventName, bool dontBroadcast)
     {
         float fSpawnTime;
 
-        if (crashedPlayers.GetValue(sAuthId, fSpawnTime)) 
+        if (GetTrieValue(crashedPlayers, sAuthId, fSpawnTime)) 
         {
             CountdownTimer CTimer_SpawnTimer = L4D2Direct_GetSpawnTimer(client);
             CTimer_Start(CTimer_SpawnTimer, fSpawnTime);
-            crashedPlayers.Remove(sAuthId);
+            RemoveFromTrie(crashedPlayers, sAuthId);
 
             if (convarDebug.BoolValue)
             {
@@ -207,21 +229,11 @@ void Event_PlayerTeam(Event hEvent, char[] sEventName, bool dontBroadcast)
             }
         } 
         
-        teamPlayers.SetValue(sAuthId, newTeam);
+        PushArrayString(infectedPlayers, sAuthId);
 
         if (convarDebug.BoolValue)
         {
             Format(sDebugMessage, sizeof(sDebugMessage), "[AutoPause (%s)] Added player %s to the infected team.", sEventName, sAuthId);
-            DebugLog(sDebugMessage);
-        }
-    }
-    else if (teamPlayers.GetValue(sAuthId, newTeam))
-    {
-        teamPlayers.Remove(sAuthId);
-
-        if (convarDebug.BoolValue)
-        {
-            Format(sDebugMessage, sizeof(sDebugMessage), "[AutoPause (%s)] Removed player %s from the %s team.", sEventName, sAuthId, newTeam == L4D_TEAM_SURVIVOR ? "survivor" : "infected");
             DebugLog(sDebugMessage);
         }
     }
@@ -240,7 +252,7 @@ void Event_PlayerDisconnect(Event hEvent, char[] sEventName, bool dontBroadcast)
     if (strcmp(sAuthId, "BOT") == 0) 
         return;
 
-    if (!teamPlayers.ContainsKey(sAuthId)) 
+    if (FindStringInArray(infectedPlayers, sAuthId) == -1 && FindStringInArray(survivorPlayers, sAuthId) == -1) 
         return;
 
     if (GetClientTeam(client) == L4D_TEAM_SURVIVOR && !IsPlayerAlive(client))
@@ -274,15 +286,14 @@ void Event_PlayerDisconnect(Event hEvent, char[] sEventName, bool dontBroadcast)
             else 
                 FakeClientCommand(client, "sm_pause");
 
-            if (!generalCrashers.ContainsKey(sAuthId))
-                generalCrashers.SetValue(sAuthId, true);
+            if (FindStringInArray(generalCrashers, sAuthId) == -1)
+                PushArrayString(generalCrashers, sAuthId);
                 
             CPrintToChatAll("%t", "Crashed", client);
         }
     }
 
-    int team;
-    if (teamPlayers.GetValue(sAuthId, team) && team == L4D_TEAM_INFECTED) 
+    if (FindStringInArray(infectedPlayers, sAuthId) != -1) 
     {
         CountdownTimer CTimer_SpawnTimer = L4D2Direct_GetSpawnTimer(client);
         if (CTimer_SpawnTimer != CTimer_Null) 
@@ -295,7 +306,7 @@ void Event_PlayerDisconnect(Event hEvent, char[] sEventName, bool dontBroadcast)
                 DebugLog(sDebugMessage);
             }
 
-            crashedPlayers.SetValue(sAuthId, fTimeLeft);
+            SetTrieValue(crashedPlayers, sAuthId, fTimeLeft);
         }
     }
 }

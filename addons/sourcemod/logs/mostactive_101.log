@@ -1,0 +1,51 @@
+L 07/14/2025 - 15:47:30: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/14/2025 - 15:47:30: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750232850' AND `last_accountuse`>'0';
+L 07/14/2025 - 15:47:30: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/14/2025 - 15:47:30: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 15:47:33: Query UPDATE mostactive SET last_accountuse = 1752479253, playername = '慧心老师',timeCT = '13711',timeTT = '14629', timeSPE = '2095',total = '30435' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/14/2025 - 15:47:33: Query UPDATE mostactive SET last_accountuse = 1752479253, playername = '蝴蝶忍',timeCT = '31',timeTT = '0', timeSPE = '4',total = '35' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 15:47:43: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 15:47:56: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/14/2025 - 15:48:40: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:677701278'
+L 07/14/2025 - 15:48:40: Query INSERT INTO mostactive(playername, steamid, last_accountuse, timeCT, timeTT, timeSPE, total) VALUES('纯', 'STEAM_1:1:677701278', '1752479320', '0', '0', '0', '0');
+L 07/14/2025 - 15:49:39: Query UPDATE mostactive SET last_accountuse = 1752479379, playername = '(S)纯',timeCT = '0',timeTT = '0', timeSPE = '59',total = '59' WHERE steamid = 'STEAM_1:1:677701278';
+L 07/14/2025 - 15:51:02: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:677701278'
+L 07/14/2025 - 15:54:34: Query UPDATE mostactive SET last_accountuse = 1752479674, playername = '慧心老师',timeCT = '13911',timeTT = '14809', timeSPE = '2113',total = '30833' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/14/2025 - 15:54:34: Query UPDATE mostactive SET last_accountuse = 1752479674, playername = '蝴蝶忍',timeCT = '211',timeTT = '230', timeSPE = '5',total = '446' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 15:54:34: Query UPDATE mostactive SET last_accountuse = 1752479674, playername = '(S)纯',timeCT = '1',timeTT = '0', timeSPE = '270',total = '271' WHERE steamid = 'STEAM_1:1:677701278';
+L 07/14/2025 - 15:54:42: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 15:54:47: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:677701278'
+L 07/14/2025 - 15:54:55: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/14/2025 - 16:04:15: Query UPDATE mostactive SET last_accountuse = 1752480255, playername = '慧心老师',timeCT = '14220',timeTT = '15058', timeSPE = '2115',total = '31393' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/14/2025 - 16:04:15: Query UPDATE mostactive SET last_accountuse = 1752480255, playername = '猫尾草',timeCT = '474',timeTT = '539', timeSPE = '5',total = '1018' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 16:04:15: Query UPDATE mostactive SET last_accountuse = 1752480255, playername = '(S)纯',timeCT = '1',timeTT = '1', timeSPE = '836',total = '838' WHERE steamid = 'STEAM_1:1:677701278';
+L 07/14/2025 - 16:04:23: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 16:04:25: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:677701278'
+L 07/14/2025 - 16:04:30: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/14/2025 - 16:07:15: Query UPDATE mostactive SET last_accountuse = 1752480435, playername = '蝴蝶忍',timeCT = '641',timeTT = '543', timeSPE = '5',total = '1189' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 16:08:16: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 16:11:56: Query UPDATE mostactive SET last_accountuse = 1752480716, playername = '慧心老师',timeCT = '14494',timeTT = '15210', timeSPE = '2135',total = '31839' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/14/2025 - 16:12:01: Query UPDATE mostactive SET last_accountuse = 1752480721, playername = '蝴蝶忍',timeCT = '645',timeTT = '543', timeSPE = '226',total = '1414' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 16:12:01: Query UPDATE mostactive SET last_accountuse = 1752480721, playername = '纯',timeCT = '1',timeTT = '288', timeSPE = '1005',total = '1294' WHERE steamid = 'STEAM_1:1:677701278';
+L 07/14/2025 - 16:12:12: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 16:12:15: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:677701278'
+L 07/14/2025 - 16:12:43: Query UPDATE mostactive SET last_accountuse = 1752480763, playername = '蝴蝶忍',timeCT = '657',timeTT = '543', timeSPE = '246',total = '1446' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 16:12:43: Query UPDATE mostactive SET last_accountuse = 1752480763, playername = '纯',timeCT = '1',timeTT = '316', timeSPE = '1006',total = '1323' WHERE steamid = 'STEAM_1:1:677701278';
+L 07/14/2025 - 16:12:56: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 16:12:58: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:677701278'
+L 07/14/2025 - 16:21:41: Query UPDATE mostactive SET last_accountuse = 1752481301, playername = '蝴蝶忍',timeCT = '1004',timeTT = '714', timeSPE = '253',total = '1971' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 16:21:41: Query UPDATE mostactive SET last_accountuse = 1752481301, playername = '纯',timeCT = '172',timeTT = '663', timeSPE = '1010',total = '1845' WHERE steamid = 'STEAM_1:1:677701278';
+L 07/14/2025 - 16:21:53: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 16:22:10: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:677701278'
+L 07/14/2025 - 16:22:30: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/14/2025 - 16:23:07: Query UPDATE mostactive SET last_accountuse = 1752481387, playername = '(S)(ᗜᴗᗜ)',timeCT = '13488',timeTT = '17620', timeSPE = '7270',total = '38378' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/14/2025 - 16:23:52: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/14/2025 - 16:30:27: Query UPDATE mostactive SET last_accountuse = 1752481827, playername = '(S)小波AFKing',timeCT = '1225',timeTT = '1558', timeSPE = '2591',total = '5374' WHERE steamid = 'STEAM_1:1:616323251';
+L 07/14/2025 - 16:30:27: Query UPDATE mostactive SET last_accountuse = 1752481827, playername = '蝴蝶忍',timeCT = '1269',timeTT = '963', timeSPE = '253',total = '2485' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 16:30:27: Query UPDATE mostactive SET last_accountuse = 1752481827, playername = '纯',timeCT = '421',timeTT = '909', timeSPE = '1012',total = '2342' WHERE steamid = 'STEAM_1:1:677701278';
+L 07/14/2025 - 16:30:38: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/14/2025 - 16:30:39: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:841848408'
+L 07/14/2025 - 16:30:43: Query UPDATE mostactive SET last_accountuse = 1752481843, playername = '蝴蝶忍',timeCT = '1272',timeTT = '963', timeSPE = '254',total = '2489' WHERE steamid = 'STEAM_1:0:841848408';
+L 07/14/2025 - 16:30:45: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:677701278'
+L 07/14/2025 - 16:31:25: Query UPDATE mostactive SET last_accountuse = 1752481885, playername = '(S)纯',timeCT = '421',timeTT = '947', timeSPE = '1014',total = '2382' WHERE steamid = 'STEAM_1:1:677701278';
+L 07/14/2025 - 16:34:33: Query UPDATE mostactive SET last_accountuse = 1752482073, playername = '(S)？',timeCT = '1225',timeTT = '1559', timeSPE = '2825',total = '5609' WHERE steamid = 'STEAM_1:1:616323251';

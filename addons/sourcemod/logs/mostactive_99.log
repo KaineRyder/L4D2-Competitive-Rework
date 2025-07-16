@@ -1,0 +1,4 @@
+L 07/14/2025 - 13:58:50: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/14/2025 - 13:58:50: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750226330' AND `last_accountuse`>'0';
+L 07/14/2025 - 15:25:07: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:631481250'
+L 07/14/2025 - 15:30:15: Query UPDATE mostactive SET last_accountuse = 1752478215, playername = 'Yy',timeCT = '6905',timeTT = '10081', timeSPE = '7535',total = '24521' WHERE steamid = 'STEAM_1:0:631481250';

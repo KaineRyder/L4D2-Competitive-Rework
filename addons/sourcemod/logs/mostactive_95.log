@@ -1,0 +1,22 @@
+L 07/14/2025 - 12:20:26: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/14/2025 - 12:20:26: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750220426' AND `last_accountuse`>'0';
+L 07/14/2025 - 12:20:26: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:923062785'
+L 07/14/2025 - 12:20:26: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:756384916'
+L 07/14/2025 - 12:20:29: Query UPDATE mostactive SET last_accountuse = 1752466829, playername = 'low',timeCT = '12501',timeTT = '13168', timeSPE = '943',total = '26612' WHERE steamid = 'STEAM_1:0:923062785';
+L 07/14/2025 - 12:20:29: Query UPDATE mostactive SET last_accountuse = 1752466829, playername = '若能化作基米',timeCT = '2574',timeTT = '2773', timeSPE = '190',total = '5537' WHERE steamid = 'STEAM_1:0:756384916';
+L 07/14/2025 - 12:20:39: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:923062785'
+L 07/14/2025 - 12:20:43: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:756384916'
+L 07/14/2025 - 12:27:40: Query UPDATE mostactive SET last_accountuse = 1752467260, playername = 'low',timeCT = '12668',timeTT = '13414', timeSPE = '950',total = '27032' WHERE steamid = 'STEAM_1:0:923062785';
+L 07/14/2025 - 12:27:40: Query UPDATE mostactive SET last_accountuse = 1752467260, playername = '雨淋湿了天空',timeCT = '2820',timeTT = '2940', timeSPE = '194',total = '5954' WHERE steamid = 'STEAM_1:0:756384916';
+L 07/14/2025 - 12:27:48: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:923062785'
+L 07/14/2025 - 12:27:54: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:756384916'
+L 07/14/2025 - 12:32:58: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:752993704'
+L 07/14/2025 - 12:33:20: Query UPDATE mostactive SET last_accountuse = 1752467600, playername = '(S)洛琪希是可爱的定义',timeCT = '1191',timeTT = '1453', timeSPE = '5226',total = '7870' WHERE steamid = 'STEAM_1:1:752993704';
+L 07/14/2025 - 12:33:39: Query UPDATE mostactive SET last_accountuse = 1752467619, playername = 'low',timeCT = '12835',timeTT = '13597', timeSPE = '951',total = '27383' WHERE steamid = 'STEAM_1:0:923062785';
+L 07/14/2025 - 12:33:39: Query UPDATE mostactive SET last_accountuse = 1752467619, playername = '雨淋湿了天空',timeCT = '2996',timeTT = '3107', timeSPE = '196',total = '6299' WHERE steamid = 'STEAM_1:0:756384916';
+L 07/14/2025 - 12:33:47: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:923062785'
+L 07/14/2025 - 12:33:50: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:756384916'
+L 07/14/2025 - 12:39:07: Query UPDATE mostactive SET last_accountuse = 1752467947, playername = '雨淋湿了天空',timeCT = '3176',timeTT = '3243', timeSPE = '197',total = '6616' WHERE steamid = 'STEAM_1:0:756384916';
+L 07/14/2025 - 12:39:24: Query UPDATE mostactive SET last_accountuse = 1752467964, playername = 'low',timeCT = '12989',timeTT = '13779', timeSPE = '951',total = '27719' WHERE steamid = 'STEAM_1:0:923062785';
+L 07/14/2025 - 12:39:34: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:923062785'
+L 07/14/2025 - 12:40:00: Query UPDATE mostactive SET last_accountuse = 1752468000, playername = 'low',timeCT = '12989',timeTT = '13804', timeSPE = '951',total = '27744' WHERE steamid = 'STEAM_1:0:923062785';

@@ -1,0 +1,11 @@
+L 07/14/2025 - 11:40:33: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/14/2025 - 11:40:33: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750218033' AND `last_accountuse`>'0';
+L 07/14/2025 - 11:40:33: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/14/2025 - 11:40:36: Query UPDATE mostactive SET last_accountuse = 1752464436, playername = '慧心老师',timeCT = '13413',timeTT = '14397', timeSPE = '2087',total = '29897' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/14/2025 - 11:40:50: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/14/2025 - 11:41:25: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:616323251'
+L 07/14/2025 - 11:41:38: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:731379898'
+L 07/14/2025 - 11:41:38: Query INSERT INTO mostactive(playername, steamid, last_accountuse, timeCT, timeTT, timeSPE, total) VALUES('香甜白子ᕕ(◠ڼ◠)ᕗ', 'STEAM_1:0:731379898', '1752464498', '0', '0', '0', '0');
+L 07/14/2025 - 11:47:44: Query UPDATE mostactive SET last_accountuse = 1752464864, playername = 'po but mutation',timeCT = '1225',timeTT = '1558', timeSPE = '2196',total = '4979' WHERE steamid = 'STEAM_1:1:616323251';
+L 07/14/2025 - 11:49:45: Query UPDATE mostactive SET last_accountuse = 1752464985, playername = '慧心老师',timeCT = '13711',timeTT = '14629', timeSPE = '2091',total = '30431' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/14/2025 - 11:49:47: Query UPDATE mostactive SET last_accountuse = 1752464987, playername = '香甜白子ᕕ(◠ڼ◠)ᕗ',timeCT = '122',timeTT = '0', timeSPE = '367',total = '489' WHERE steamid = 'STEAM_1:0:731379898';

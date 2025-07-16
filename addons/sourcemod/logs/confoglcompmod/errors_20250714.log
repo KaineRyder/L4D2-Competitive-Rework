@@ -1,0 +1,61 @@
+L 07/14/2025 - 11:40:33: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 11:40:33: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_car_alarms)
+L 07/14/2025 - 11:40:33: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_horde)
+L 07/14/2025 - 11:50:07: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 12:20:26: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 12:20:26: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_car_alarms)
+L 07/14/2025 - 12:20:26: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_horde)
+L 07/14/2025 - 12:40:19: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar versus_tank_flow_team_variation, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar versus_boss_flow_max, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar versus_boss_flow_min, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar tank_stuck_time_suicide, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar tank_stuck_visibility_tolerance_suicide, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar tank_visibility_tolerance_suicide, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar director_tank_lottery_selection_time, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar z_frustration_spawn_delay, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar z_frustration_los_delay, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar tankcontrol_print_all, which is already being tracked.
+L 07/14/2025 - 13:42:41: [CvarSettings] [c2m1_highway] Attempt to track ConVar tank_ground_pound_duration, which is already being tracked.
+L 07/14/2025 - 13:52:59: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 13:58:50: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 15:30:35: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 15:47:30: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 15:47:30: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_car_alarms)
+L 07/14/2025 - 15:47:30: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_horde)
+L 07/14/2025 - 16:34:52: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 18:20:12: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar versus_tank_flow_team_variation, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar versus_boss_flow_max, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar versus_boss_flow_min, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar tank_stuck_time_suicide, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar tank_stuck_visibility_tolerance_suicide, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar tank_visibility_tolerance_suicide, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar director_tank_lottery_selection_time, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar z_frustration_spawn_delay, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar z_frustration_los_delay, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar tankcontrol_print_all, which is already being tracked.
+L 07/14/2025 - 18:24:16: [CvarSettings] [c2m1_highway] Attempt to track ConVar tank_ground_pound_duration, which is already being tracked.
+L 07/14/2025 - 18:29:30: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 18:29:30: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_car_alarms)
+L 07/14/2025 - 18:29:30: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_horde)
+L 07/14/2025 - 18:35:37: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 18:36:08: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 18:36:08: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_car_alarms)
+L 07/14/2025 - 18:36:08: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_horde)
+L 07/14/2025 - 19:04:07: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 19:41:10: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 20:16:36: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 21:12:08: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 21:12:08: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_car_alarms)
+L 07/14/2025 - 21:12:08: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_horde)
+L 07/14/2025 - 21:15:26: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 21:16:01: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 21:16:41: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 21:16:41: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_car_alarms)
+L 07/14/2025 - 21:16:41: [CvarSettings] [c2m1_highway] Could not find CVar specified (ssb_block_horde)
+L 07/14/2025 - 21:17:33: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 23:39:41: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)
+L 07/14/2025 - 23:49:35: [CvarSettings] [c2m1_highway] Could not find CVar specified (confogl_boss_unprohibit)

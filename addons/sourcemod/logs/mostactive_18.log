@@ -1,0 +1,23 @@
+L 07/11/2025 - 18:32:13: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/11/2025 - 18:32:13: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1749983533' AND `last_accountuse`>'0';
+L 07/11/2025 - 18:32:13: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/11/2025 - 18:32:16: Query UPDATE mostactive SET last_accountuse = 1752229936, playername = 'Kobe Bryant',timeCT = '16',timeTT = '33', timeSPE = '6',total = '55' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/11/2025 - 18:32:45: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/11/2025 - 18:32:49: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:845964559'
+L 07/11/2025 - 18:32:49: Query INSERT INTO mostactive(playername, steamid, last_accountuse, timeCT, timeTT, timeSPE, total) VALUES('Tom', 'STEAM_1:0:845964559', '1752229969', '0', '0', '0', '0');
+L 07/11/2025 - 18:39:35: Query UPDATE mostactive SET last_accountuse = 1752230375, playername = 'Kobe Bryant',timeCT = '196',timeTT = '257', timeSPE = '12',total = '465' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/11/2025 - 18:39:35: Query UPDATE mostactive SET last_accountuse = 1752230375, playername = 'Tom',timeCT = '222',timeTT = '180', timeSPE = '4',total = '406' WHERE steamid = 'STEAM_1:0:845964559';
+L 07/11/2025 - 18:39:46: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:845964559'
+L 07/11/2025 - 18:40:17: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/11/2025 - 18:40:45: Query UPDATE mostactive SET last_accountuse = 1752230445, playername = 'Kobe Bryant',timeCT = '196',timeTT = '274', timeSPE = '24',total = '494' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/11/2025 - 18:43:19: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/11/2025 - 18:48:49: Query UPDATE mostactive SET last_accountuse = 1752230929, playername = 'Kobe Bryant',timeCT = '340',timeTT = '449', timeSPE = '35',total = '824' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/11/2025 - 18:48:49: Query UPDATE mostactive SET last_accountuse = 1752230929, playername = 'Tom',timeCT = '616',timeTT = '324', timeSPE = '9',total = '949' WHERE steamid = 'STEAM_1:0:845964559';
+L 07/11/2025 - 18:49:01: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:845964559'
+L 07/11/2025 - 18:49:23: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/11/2025 - 18:54:32: Query UPDATE mostactive SET last_accountuse = 1752231272, playername = 'Kobe Bryant',timeCT = '501',timeTT = '594', timeSPE = '38',total = '1133' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/11/2025 - 18:54:32: Query UPDATE mostactive SET last_accountuse = 1752231272, playername = 'Tom',timeCT = '785',timeTT = '485', timeSPE = '10',total = '1280' WHERE steamid = 'STEAM_1:0:845964559';
+L 07/11/2025 - 18:54:46: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:0:845964559'
+L 07/11/2025 - 18:55:01: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/11/2025 - 18:59:42: Query UPDATE mostactive SET last_accountuse = 1752231582, playername = 'Kobe Bryant',timeCT = '644',timeTT = '729', timeSPE = '40',total = '1413' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/11/2025 - 18:59:44: Query UPDATE mostactive SET last_accountuse = 1752231584, playername = 'Tom',timeCT = '923',timeTT = '644', timeSPE = '11',total = '1578' WHERE steamid = 'STEAM_1:0:845964559';

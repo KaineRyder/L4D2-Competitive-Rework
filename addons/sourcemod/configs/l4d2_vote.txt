@@ -1,0 +1,410 @@
+"VoteItems"         //需要什么自己复制格式添加  不会咨询老狗聚集地  腐竹:我是萌新别打我
+{
+	"投票幸存者回血"
+	{
+		"sm_hp" 
+		{
+			"message" "投票回血"
+		}
+	}
+	"投票人不够或者不会F1的时候强制开始回合"
+	{
+		"sm_forcestart "
+		{
+			"message" "投票强制开始"
+		}
+	}
+
+	"更改全体语音"
+	{
+		"sv_alltalk 1"
+		{
+			"message" "打开全体语音"
+		}
+		"sv_alltalk 0"
+		{
+			"message" "关闭全体语音"
+		}
+	}
+
+	"投票踢人踢旁观卡位的"
+	{
+		"sm_votekick"
+		{
+			"message" "投票踢人"
+		}
+		"sm_votespec"
+		{
+			"message" "投票某人旁观"
+		}
+	}
+	"增减旁观位置"
+	{
+		"slots+4"
+		{
+			"message" "增加4个位置"
+		}
+		"slots-4"
+		{
+			"message" "减少4个位置"
+		}
+		"slotsfull"
+		{
+			"message" "增加至最多"
+		}
+		"slotsplayer"
+		{
+			"message" "减去所有空余位置"
+		}
+	}
+	"切换到三方对抗图"
+	{
+	"sm_map dkr_m1_motel"
+		{
+			"message" "C2改dkremix"
+		}
+	"sm_map cwm1_intro"
+		{
+			"message" "绝处逢生"
+		}
+	"sm_map nmrm1_apartment"
+		{
+			"message" "毫不留情(C8)改"
+		}
+	"sm_map l4d2_city17_01"
+		{
+			"message" "City17"
+		}
+	"exec maps/dxsl.cfg"
+		{
+			"message" "喋血蜃楼"
+		}
+	"sm_map x1m1_cliffs"
+		{
+			"message" "绝命公路"
+		}
+	"sm_map l4d2_stadium1_apartment"
+		{
+			"message" "闪电突袭"
+		}
+	"sm_map hf01_theforest"
+		{
+			"message" "颤栗森林"
+		}
+	"sm_map l4d2_daybreak01_hotel"
+		{
+			"message" "daybreak"
+		}
+	"sm_map cdta_01detour"
+		{
+			"message" "迂回前进"
+		}
+	"sm_map dprm1_milltown_a"
+		{
+			"message" "C4改（暴风骤雨：倾盆大雨）"
+		}
+	"sm_map l4d_ihm01_forest"
+		{
+			"message" "我恨山"
+		}
+	"sm_map tripday_new_m1"
+		{
+			"message" "tripday"
+		}
+	"sm_map l4d_dbd2dc_anna_is_gone"
+		{
+			"message" "活死人黎明"
+		}
+	"sm_map l4d2_ff01_woods"
+		{
+			"message" "致命货运站"
+		}
+	"sm_map DCR1_meetup_F"
+		{
+			"message" "死亡中心重制版"
+		}
+	"sm_map dcr_m1_hotel"
+		{
+			"message" "死亡中心：重生"
+		}
+	"sm_map PR1_Waterfront_F"
+		{
+			"message" "教区蔓延"
+		}
+	"sm_map fos1m1_hill"
+		{
+			"message" "生还之锋"
+		}
+	"sm_map hf01_theforest"
+		{
+			"message" "颤栗森林"
+		}
+	"sm_map "
+		{
+			"message" "干猫尾草"
+		}
+	"sm_map "
+		{
+			"message" "草猫尾草"
+		}
+	}
+	"切换到官方对抗图"
+	{
+	// 一、死亡中心
+	"sm_map c1m1_hotel"
+	{
+	    "message" "死亡中心：旅店"
+	}
+	"sm_map c1m2_streets"
+	{
+	    "message" "死亡中心：街道"
+	}
+	"sm_map c1m3_mall"
+	{
+	    "message" "死亡中心：购物中心"
+	}
+	"sm_map c1m4_atrium"
+	{
+	    "message" "死亡中心：中厅"
+	}
+	
+	// 二、短暂时刻
+	"sm_map c6m1_riverbank"
+	{
+	    "message" "短暂时刻：河畔"
+	}
+	"sm_map c6m2_bedlam"
+	{
+	    "message" "短暂时刻：地下通道"
+	}
+	"sm_map c6m3_port"
+	{
+	    "message" "短暂时刻：港口"
+	}
+	
+	// 三、黑色狂欢节
+	"sm_map c2m1_highway"
+	{
+	    "message" "黑色狂欢节：高速公路"
+	}
+	"sm_map c2m2_fairgrounds"
+	{
+	    "message" "黑色狂欢节：游乐场"
+	}
+	"sm_map c2m3_coaster"
+	{
+	    "message" "黑色狂欢节：过山车"
+	}
+	"sm_map c2m4_barns"
+	{
+	    "message" "黑色狂欢节：谷仓"
+	}
+	"sm_map c2m5_concert"
+	{
+	    "message" "黑色狂欢节：音乐会"
+	}
+	
+	// 四、沼泽激战
+	"sm_map c3m1_plankcountry"
+	{
+	    "message" "沼泽激战：乡村"
+	}
+	"sm_map c3m2_swamp"
+	{
+	    "message" "沼泽激战：沼泽"
+	}
+	"sm_map c3m3_shantytown"
+	{
+	    "message" "沼泽激战：贫民窟"
+	}
+	"sm_map c3m4_plantation"
+	{
+	    "message" "沼泽激战：种植园"
+	}
+	
+	// 五、暴风骤雨
+	"sm_map c4m1_milltown_a"
+	{
+	    "message" "暴风骤雨：密尔城"
+	}
+	"sm_map c4m2_sugarmill_a"
+	{
+	    "message" "暴风骤雨：糖厂"
+	}
+	"sm_map c4m3_sugarmill_b"
+	{
+	    "message" "暴风骤雨：逃离工厂"
+	}
+	"sm_map c4m4_milltown_b"
+	{
+	    "message" "暴风骤雨：重返小镇"
+	}
+	"sm_map c4m5_milltown_escape"
+	{
+	    "message" "暴风骤雨：逃离小镇"
+	}
+	
+	// 六、教区
+	"sm_map c5m1_waterfront"
+	{
+	    "message" "教区：码头"
+	}
+	"sm_map c5m2_park"
+	{
+	    "message" "教区：公园"
+	}
+	"sm_map c5m3_cemetery"
+	{
+	    "message" "教区：墓地"
+	}
+	"sm_map c5m4_quarter"
+	{
+	    "message" "教区：特区"
+	}
+	"sm_map c5m5_bridge"
+	{
+	    "message" "教区：桥"
+	}
+	
+	// 七、牺牲
+	"sm_map c7m1_docks"
+	{
+	    "message" "牺牲：码头"
+	}
+	"sm_map c7m2_barge"
+	{
+	    "message" "牺牲：驳船"
+	}
+	"sm_map c7m3_port"
+	{
+	    "message" "牺牲：港口"
+	}
+	
+	// 八、毫不留情
+	"sm_map c8m1_apartment"
+	{
+	    "message" "毫不留情：公寓"
+	}
+	"sm_map c8m2_subway"
+	{
+	    "message" "毫不留情：地铁"
+	}
+	"sm_map c8m3_sewers"
+	{
+	    "message" "毫不留情：下水道"
+	}
+	"sm_map c8m4_interior"
+	{
+	    "message" "毫不留情：医院"
+	}
+	"sm_map c8m5_rooftop"
+	{
+	    "message" "毫不留情：屋顶"
+	}
+	
+	// 九、坠机险途
+	"sm_map c9m1_alleys"
+	{
+	    "message" "坠机险途：小巷"
+	}
+	"sm_map c9m2_lots"
+	{
+	    "message" "坠机险途：卡车停车场"
+	}
+	
+	// 十、死亡丧钟
+	"sm_map c10m1_caves"
+	{
+	    "message" "死亡丧钟：收费公路"
+	}
+	"sm_map c10m2_drainage"
+	{
+	    "message" "死亡丧钟：水沟"
+	}
+	"sm_map c10m3_ranchhouse"
+	{
+	    "message" "死亡丧钟：教堂"
+	}
+	"sm_map c10m4_mainstreet"
+	{
+	    "message" "死亡丧钟：小镇"
+	}
+	"sm_map c10m5_houseboat"
+	{
+	    "message" "死亡丧钟：码头"
+	}
+	
+	// 十一、寂静时分
+	"sm_map c11m1_greenhouse"
+	{
+	    "message" "寂静时分：花房"
+	}
+	"sm_map c11m2_offices"
+	{
+	    "message" "寂静时分：起重机"
+	}
+	"sm_map c11m3_garage"
+	{
+	    "message" "寂静时分：建筑工地"
+	}
+	"sm_map c11m4_terminal"
+	{
+	    "message" "寂静时分：航空机场"
+	}
+	"sm_map c11m5_runway"
+	{
+	    "message" "寂静时分：飞机跑道"
+	}
+	
+	// 十二、血腥收获
+	"sm_map c12m1_hilltop"
+	{
+	    "message" "血腥收获：森林"
+	}
+	"sm_map c12m2_traintunnel"
+	{
+	    "message" "血腥收获：隧道"
+	}
+	"sm_map c12m3_bridge"
+	{
+	    "message" "血腥收获：桥"
+	}
+	"sm_map c12m4_barn"
+	{
+	    "message" "血腥收获：火车站"
+	}
+	"sm_map c12m5_cornfield"
+	{
+	    "message" "血腥收获：农舍"
+	}
+	
+	// 十三、刺骨寒溪
+	"sm_map c13m1_alpinecreek"
+	{
+	    "message" "刺骨寒溪：高山小溪"
+	}
+	"sm_map c13m2_southpinestream"
+	{
+	    "message" "刺骨寒溪：松木之河"
+	}
+	"sm_map c13m3_memorialbridge"
+	{
+	    "message" "刺骨寒溪：纪念大桥"
+	}
+	"sm_map c13m4_cutthroatcreek"
+	{
+	    "message" "刺骨寒溪：残酷溪流"
+	}
+	
+	// 十四、临死一博
+	"sm_map c14m1_junkyard"
+	{
+	    "message" "临死一博：废物场"
+	}
+	"sm_map c14m2_lighthouse"
+	{
+	    "message" "临死一博：灯塔终"
+	}
+	}	
+
+}

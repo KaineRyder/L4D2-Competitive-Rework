@@ -1,0 +1,15 @@
+"Advertisements"
+{
+	"1"
+	{
+		"type"	"S"
+		"text"	"{GREEN}纸飞机:{TEAM}本服务器十分感谢Sky服管理Air大佬的帮忙，没有Air就没有今天的纸飞机内战服."
+	}
+	"2"
+	{
+		"type"	"S"
+		"text"	"{GREEN}纸飞机:{TEAM}泉此方世界第一可爱！"
+	}
+		
+	
+}

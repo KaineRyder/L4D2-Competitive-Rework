@@ -1,0 +1,331 @@
+L 07/09/2025 - 21:10:55: SourceMod error session started
+L 07/09/2025 - 21:10:55: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:10:55: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:10:56: [SM] Unable to load plugin "LMC_Black_and_White_Notifier.smx": Could not find required plugin "l4d_heartbeat"
+L 07/09/2025 - 21:12:53: SourceMod error session started
+L 07/09/2025 - 21:12:53: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:12:53: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:12:53: [SM] Unable to load plugin "LMC_Black_and_White_Notifier.smx": Could not find required plugin "l4d_heartbeat"
+L 07/09/2025 - 21:15:11: SourceMod error session started
+L 07/09/2025 - 21:15:11: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:15:11: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:15:12: [SM] Unable to load plugin "LMC_Black_and_White_Notifier.smx": Could not find required plugin "l4d_heartbeat"
+L 07/09/2025 - 21:15:17: Error log file session closed.
+L 07/09/2025 - 21:17:41: SourceMod error session started
+L 07/09/2025 - 21:17:41: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:17:41: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:17:41: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 21:17:41: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:4001: Unknown error 101
+L 07/09/2025 - 21:17:41: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:17:53: [SM] Exception reported: Language phrase "PluralCount" not found (arg 5)
+L 07/09/2025 - 21:17:53: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 07/09/2025 - 21:17:53: [SM] Call stack trace:
+L 07/09/2025 - 21:17:53: [SM]   [0] Format
+L 07/09/2025 - 21:17:53: [SM]   [1] Line 514, l4d2_skill_detect\report.sp::PluralCount
+L 07/09/2025 - 21:17:53: [SM]   [2] Line 429, l4d2_skill_detect\report.sp::HandleBHopStreak
+L 07/09/2025 - 21:17:53: [SM]   [3] Line 666, l4d2_skill_detect\tracking.sp::Event_PlayerJumped
+L 07/09/2025 - 21:17:54: [SM] Exception reported: Language phrase "PluralCount" not found (arg 5)
+L 07/09/2025 - 21:17:54: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 07/09/2025 - 21:17:54: [SM] Call stack trace:
+L 07/09/2025 - 21:17:54: [SM]   [0] Format
+L 07/09/2025 - 21:17:54: [SM]   [1] Line 514, l4d2_skill_detect\report.sp::PluralCount
+L 07/09/2025 - 21:17:54: [SM]   [2] Line 429, l4d2_skill_detect\report.sp::HandleBHopStreak
+L 07/09/2025 - 21:17:54: [SM]   [3] Line 721, l4d2_skill_detect\tracking.sp::Timer_CheckHopStreak
+L 07/09/2025 - 21:17:54: [SM] Exception reported: Language phrase "PluralCount" not found (arg 5)
+L 07/09/2025 - 21:17:54: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 07/09/2025 - 21:17:54: [SM] Call stack trace:
+L 07/09/2025 - 21:17:54: [SM]   [0] Format
+L 07/09/2025 - 21:17:54: [SM]   [1] Line 514, l4d2_skill_detect\report.sp::PluralCount
+L 07/09/2025 - 21:17:54: [SM]   [2] Line 429, l4d2_skill_detect\report.sp::HandleBHopStreak
+L 07/09/2025 - 21:17:54: [SM]   [3] Line 721, l4d2_skill_detect\tracking.sp::Timer_CheckHopStreak
+L 07/09/2025 - 21:17:55: [SM] Exception reported: Language phrase "PluralCount" not found (arg 5)
+L 07/09/2025 - 21:17:55: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 07/09/2025 - 21:17:55: [SM] Call stack trace:
+L 07/09/2025 - 21:17:55: [SM]   [0] Format
+L 07/09/2025 - 21:17:55: [SM]   [1] Line 514, l4d2_skill_detect\report.sp::PluralCount
+L 07/09/2025 - 21:17:55: [SM]   [2] Line 429, l4d2_skill_detect\report.sp::HandleBHopStreak
+L 07/09/2025 - 21:17:55: [SM]   [3] Line 721, l4d2_skill_detect\tracking.sp::Timer_CheckHopStreak
+L 07/09/2025 - 21:18:14: Error log file session closed.
+L 07/09/2025 - 21:20:38: SourceMod error session started
+L 07/09/2025 - 21:20:38: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:20:38: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:20:38: [SM] Unable to load plugin "LMC_Black_and_White_Notifier.smx": Could not find required plugin "l4d_heartbeat"
+L 07/09/2025 - 21:20:44: Error log file session closed.
+L 07/09/2025 - 21:22:36: SourceMod error session started
+L 07/09/2025 - 21:22:36: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:22:36: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:22:36: [SM] Unable to load plugin "LMC_Black_and_White_Notifier.smx": Could not find required plugin "l4d_heartbeat"
+L 07/09/2025 - 21:22:42: Error log file session closed.
+L 07/09/2025 - 21:25:06: SourceMod error session started
+L 07/09/2025 - 21:25:06: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:25:06: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:25:06: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 21:25:06: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:3001: Unknown error 101
+L 07/09/2025 - 21:25:06: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:45:08: Error log file session closed.
+L 07/09/2025 - 21:48:32: SourceMod error session started
+L 07/09/2025 - 21:48:32: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:48:32: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:48:38: Error log file session closed.
+L 07/09/2025 - 21:51:02: SourceMod error session started
+L 07/09/2025 - 21:51:02: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:51:02: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:51:02: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 21:51:02: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:1001: Unknown error 101
+L 07/09/2025 - 21:51:02: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:52:03: SourceMod error session started
+L 07/09/2025 - 21:52:03: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:52:03: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:52:08: Error log file session closed.
+L 07/09/2025 - 21:54:33: SourceMod error session started
+L 07/09/2025 - 21:54:33: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:54:33: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:54:33: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 21:54:33: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:1001: Unknown error 101
+L 07/09/2025 - 21:54:33: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:55:04: SourceMod error session started
+L 07/09/2025 - 21:55:04: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:55:04: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:55:04: [SM] Unable to load plugin "fixes/l4d2_shove_fix.smx": Native "BehaviorAction.OnShoved.set" was not found
+L 07/09/2025 - 21:55:07: [SM] Exception reported: Failed to locate signature for 'CTankRock::ProximityThink' (mempatch 'CTankRock::ProximityThink__No_ForEachPlayer')
+L 07/09/2025 - 21:55:07: [SM] Blaming: fixes/l4d2_rock_trace_unblock.smx
+L 07/09/2025 - 21:55:07: [SM] Call stack trace:
+L 07/09/2025 - 21:55:07: [SM]   [0] MemoryPatch.CreateFromConf
+L 07/09/2025 - 21:55:07: [SM]   [1] Line 50, J:\Users\Administrator\Documents\GitHub\MoYu_Server_Stupid_Plugins\The Last Stand\l4d2_rock_trace_unblock\l4d2_rock_trace_unblock.sp::LoadSDK
+L 07/09/2025 - 21:55:07: [SM]   [2] Line 72, J:\Users\Administrator\Documents\GitHub\MoYu_Server_Stupid_Plugins\The Last Stand\l4d2_rock_trace_unblock\l4d2_rock_trace_unblock.sp::OnPluginStart
+L 07/09/2025 - 21:55:10: Error log file session closed.
+L 07/09/2025 - 21:57:07: SourceMod error session started
+L 07/09/2025 - 21:57:07: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 21:57:07: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 21:59:37: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:59:37: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 21:59:37: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:1001: Unknown error 101
+L 07/09/2025 - 21:59:37: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 21:59:49: Error log file session closed.
+L 07/09/2025 - 22:11:56: SourceMod error session started
+L 07/09/2025 - 22:11:56: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:11:56: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 22:13:39: [SM] Exception reported: Invalid convar handle 2ca002a1 (error 3)
+L 07/09/2025 - 22:13:39: [SM] Blaming: match_vote.smx
+L 07/09/2025 - 22:13:39: [SM] Call stack trace:
+L 07/09/2025 - 22:13:39: [SM]   [0] ConVar.SetInt
+L 07/09/2025 - 22:13:39: [SM]   [1] Line 102, C:\Users\Sir\Documents\GitHub\L4D2-Competitive-Rework\addons\sourcemod\scripting\match_vote.sp::OnPluginEnd
+L 07/09/2025 - 22:13:39: Error log file session closed.
+L 07/09/2025 - 22:13:52: SourceMod error session started
+L 07/09/2025 - 22:13:52: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:13:52: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 22:17:46: SourceMod error session started
+L 07/09/2025 - 22:17:46: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:17:46: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 22:24:11: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:24:11: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 22:24:11: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:4001: Unknown error 101
+L 07/09/2025 - 22:24:11: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:24:23: SourceMod error session started
+L 07/09/2025 - 22:24:23: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:24:23: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 22:24:30: Error log file session closed.
+L 07/09/2025 - 22:26:53: SourceMod error session started
+L 07/09/2025 - 22:26:53: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:26:53: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:26:53: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 22:26:53: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:2001: Unknown error 101
+L 07/09/2025 - 22:26:53: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:29:15: Error log file session closed.
+L 07/09/2025 - 22:30:55: SourceMod error session started
+L 07/09/2025 - 22:30:55: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:30:55: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 22:31:01: Error log file session closed.
+L 07/09/2025 - 22:32:12: SourceMod error session started
+L 07/09/2025 - 22:32:12: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:32:12: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 22:32:18: Error log file session closed.
+L 07/09/2025 - 22:34:42: SourceMod error session started
+L 07/09/2025 - 22:34:42: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:34:42: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:34:42: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 22:34:42: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:3001: Unknown error 101
+L 07/09/2025 - 22:34:42: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:36:16: Error log file session closed.
+L 07/09/2025 - 22:37:52: SourceMod error session started
+L 07/09/2025 - 22:37:52: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:37:52: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 22:37:58: Error log file session closed.
+L 07/09/2025 - 22:40:22: SourceMod error session started
+L 07/09/2025 - 22:40:22: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:40:22: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:40:22: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 22:40:22: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:5001: Unknown error 101
+L 07/09/2025 - 22:40:22: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:42:20: Error log file session closed.
+L 07/09/2025 - 22:50:31: SourceMod error session started
+L 07/09/2025 - 22:50:31: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:50:31: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 22:50:38: Error log file session closed.
+L 07/09/2025 - 22:53:01: SourceMod error session started
+L 07/09/2025 - 22:53:01: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 22:53:01: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 22:53:01: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 22:53:01: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:4001: Unknown error 101
+L 07/09/2025 - 22:53:01: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:00:53: SourceMod error session started
+L 07/09/2025 - 23:00:53: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:00:53: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:00:55: [SM] Fatal error encountered parsing translation file "l4dffannounce.phrases.txt"
+L 07/09/2025 - 23:00:55: [SM] Error (line 0, column 0): Stream failed to open
+L 07/09/2025 - 23:00:59: Error log file session closed.
+L 07/09/2025 - 23:00:59: SourceMod error session started
+L 07/09/2025 - 23:00:59: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:00:59: [SM] Fatal error encountered parsing translation file "l4dffannounce.phrases.txt"
+L 07/09/2025 - 23:00:59: [SM] Error (line 0, column 0): Stream failed to open
+L 07/09/2025 - 23:03:23: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:03:23: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 23:03:23: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:2001: Unknown error 101
+L 07/09/2025 - 23:03:23: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:09:09: [SM] Exception reported: Language phrase "FF_dealt (C)" not found (arg 5)
+L 07/09/2025 - 23:09:09: [SM] Blaming: optional/l4dffannounce.smx
+L 07/09/2025 - 23:09:09: [SM] Call stack trace:
+L 07/09/2025 - 23:09:09: [SM]   [0] VFormat
+L 07/09/2025 - 23:09:09: [SM]   [1] Line 71, D:\Github\Private-Work\L4D2-插件\scripting_1.11\include\multicolors.inc::CPrintToChat
+L 07/09/2025 - 23:09:09: [SM]   [2] Line 198, d:\Github\Private-Work\L4D2-插件\scripting_1.11\l4dffannounce.sp::AnnounceFF
+L 07/09/2025 - 23:09:09: [SM] Exception reported: Handle 7d200bfc is invalid (error 1)
+L 07/09/2025 - 23:09:09: [SM] Blaming: optional/l4dffannounce.smx
+L 07/09/2025 - 23:09:09: [SM] Call stack trace:
+L 07/09/2025 - 23:09:09: [SM]   [0] CloseHandle
+L 07/09/2025 - 23:09:09: [SM]   [1] Line 120, d:\Github\Private-Work\L4D2-插件\scripting_1.11\l4dffannounce.sp::Event_HurtConcise
+L 07/09/2025 - 23:09:09: [SM]   [3] SDKHooks_TakeDamage
+L 07/09/2025 - 23:09:09: [SM]   [4] Line 971, C:\Users\Sir\Documents\GitHub\L4D2-Competitive-Rework\addons\sourcemod\scripting\l4d2_godframes_control_merge.sp::ProcessShot
+L 07/09/2025 - 23:09:13: [SM] Exception reported: Handle 7d200bfc is invalid (error 1)
+L 07/09/2025 - 23:09:13: [SM] Blaming: optional/l4dffannounce.smx
+L 07/09/2025 - 23:09:13: [SM] Call stack trace:
+L 07/09/2025 - 23:09:13: [SM]   [0] CloseHandle
+L 07/09/2025 - 23:09:13: [SM]   [1] Line 120, d:\Github\Private-Work\L4D2-插件\scripting_1.11\l4dffannounce.sp::Event_HurtConcise
+L 07/09/2025 - 23:09:13: [SM]   [3] SDKHooks_TakeDamage
+L 07/09/2025 - 23:09:13: [SM]   [4] Line 971, C:\Users\Sir\Documents\GitHub\L4D2-Competitive-Rework\addons\sourcemod\scripting\l4d2_godframes_control_merge.sp::ProcessShot
+L 07/09/2025 - 23:09:17: [SM] Exception reported: Handle 7d200bfc is invalid (error 1)
+L 07/09/2025 - 23:09:17: [SM] Blaming: optional/l4dffannounce.smx
+L 07/09/2025 - 23:09:17: [SM] Call stack trace:
+L 07/09/2025 - 23:09:17: [SM]   [0] CloseHandle
+L 07/09/2025 - 23:09:17: [SM]   [1] Line 120, d:\Github\Private-Work\L4D2-插件\scripting_1.11\l4dffannounce.sp::Event_HurtConcise
+L 07/09/2025 - 23:09:17: [SM]   [3] SDKHooks_TakeDamage
+L 07/09/2025 - 23:09:17: [SM]   [4] Line 971, C:\Users\Sir\Documents\GitHub\L4D2-Competitive-Rework\addons\sourcemod\scripting\l4d2_godframes_control_merge.sp::ProcessShot
+L 07/09/2025 - 23:09:17: [SM] Exception reported: Handle 7d200bfc is invalid (error 1)
+L 07/09/2025 - 23:09:17: [SM] Blaming: optional/l4dffannounce.smx
+L 07/09/2025 - 23:09:17: [SM] Call stack trace:
+L 07/09/2025 - 23:09:17: [SM]   [0] CloseHandle
+L 07/09/2025 - 23:09:17: [SM]   [1] Line 120, d:\Github\Private-Work\L4D2-插件\scripting_1.11\l4dffannounce.sp::Event_HurtConcise
+L 07/09/2025 - 23:09:17: [SM]   [3] SDKHooks_TakeDamage
+L 07/09/2025 - 23:09:17: [SM]   [4] Line 971, C:\Users\Sir\Documents\GitHub\L4D2-Competitive-Rework\addons\sourcemod\scripting\l4d2_godframes_control_merge.sp::ProcessShot
+L 07/09/2025 - 23:09:17: [SM] Exception reported: Handle 7d200bfc is invalid (error 1)
+L 07/09/2025 - 23:09:17: [SM] Blaming: optional/l4dffannounce.smx
+L 07/09/2025 - 23:09:17: [SM] Call stack trace:
+L 07/09/2025 - 23:09:17: [SM]   [0] CloseHandle
+L 07/09/2025 - 23:09:17: [SM]   [1] Line 120, d:\Github\Private-Work\L4D2-插件\scripting_1.11\l4dffannounce.sp::Event_HurtConcise
+L 07/09/2025 - 23:09:17: [SM]   [3] SDKHooks_TakeDamage
+L 07/09/2025 - 23:09:17: [SM]   [4] Line 971, C:\Users\Sir\Documents\GitHub\L4D2-Competitive-Rework\addons\sourcemod\scripting\l4d2_godframes_control_merge.sp::ProcessShot
+L 07/09/2025 - 23:09:17: [SM] Exception reported: Handle 7d200bfc is invalid (error 1)
+L 07/09/2025 - 23:09:17: [SM] Blaming: optional/l4dffannounce.smx
+L 07/09/2025 - 23:09:17: [SM] Call stack trace:
+L 07/09/2025 - 23:09:17: [SM]   [0] CloseHandle
+L 07/09/2025 - 23:09:17: [SM]   [1] Line 120, d:\Github\Private-Work\L4D2-插件\scripting_1.11\l4dffannounce.sp::Event_HurtConcise
+L 07/09/2025 - 23:09:17: [SM]   [3] SDKHooks_TakeDamage
+L 07/09/2025 - 23:09:17: [SM]   [4] Line 971, C:\Users\Sir\Documents\GitHub\L4D2-Competitive-Rework\addons\sourcemod\scripting\l4d2_godframes_control_merge.sp::ProcessShot
+L 07/09/2025 - 23:09:34: SourceMod error session started
+L 07/09/2025 - 23:09:34: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:09:34: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:09:40: Error log file session closed.
+L 07/09/2025 - 23:12:04: SourceMod error session started
+L 07/09/2025 - 23:12:04: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:12:04: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:12:04: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 23:12:04: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:2001: Unknown error 101
+L 07/09/2025 - 23:12:04: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:19:01: SourceMod error session started
+L 07/09/2025 - 23:19:01: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:19:01: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:19:07: Error log file session closed.
+L 07/09/2025 - 23:21:31: SourceMod error session started
+L 07/09/2025 - 23:21:31: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:21:31: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:21:31: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 23:21:31: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:6001: Unknown error 101
+L 07/09/2025 - 23:21:31: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:22:07: SourceMod error session started
+L 07/09/2025 - 23:22:07: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:22:07: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:22:13: Error log file session closed.
+L 07/09/2025 - 23:24:46: SourceMod error session started
+L 07/09/2025 - 23:24:46: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:24:46: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:24:52: Error log file session closed.
+L 07/09/2025 - 23:27:01: SourceMod error session started
+L 07/09/2025 - 23:27:01: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:27:01: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:27:07: Error log file session closed.
+L 07/09/2025 - 23:28:33: Error log file session closed.
+L 07/09/2025 - 23:30:34: SourceMod error session started
+L 07/09/2025 - 23:30:34: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:30:34: [SM] Exception reported: Language phrase "Shoving" not found (arg 5)
+L 07/09/2025 - 23:30:34: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 07/09/2025 - 23:30:34: [SM] Call stack trace:
+L 07/09/2025 - 23:30:34: [SM]   [0] Format
+L 07/09/2025 - 23:30:34: [SM]   [1] Line 259, l4d2_skill_detect\report.sp::HandleSmokerSelfClear
+L 07/09/2025 - 23:30:34: [SM]   [2] Line 1481, l4d2_skill_detect\tracking.sp::Event_TonguePullStopped
+L 07/09/2025 - 23:30:50: [SM] Exception reported: Language phrase "Tag+++" not found (arg 3)
+L 07/09/2025 - 23:30:50: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 07/09/2025 - 23:30:50: [SM] Call stack trace:
+L 07/09/2025 - 23:30:50: [SM]   [0] VFormat
+L 07/09/2025 - 23:30:50: [SM]   [1] Line 248, colors::CPrintToChatAll
+L 07/09/2025 - 23:30:50: [SM]   [2] Line 243, l4d2_skill_detect\report.sp::HandleTongueCut
+L 07/09/2025 - 23:30:50: [SM]   [3] Line 1490, l4d2_skill_detect\tracking.sp::Event_TonguePullStopped
+L 07/09/2025 - 23:30:56: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:30:56: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 23:30:56: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:2001: Unknown error 101
+L 07/09/2025 - 23:30:56: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:31:58: [SM] Exception reported: Language phrase "Shoving" not found (arg 5)
+L 07/09/2025 - 23:31:58: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 07/09/2025 - 23:31:58: [SM] Call stack trace:
+L 07/09/2025 - 23:31:58: [SM]   [0] Format
+L 07/09/2025 - 23:31:58: [SM]   [1] Line 259, l4d2_skill_detect\report.sp::HandleSmokerSelfClear
+L 07/09/2025 - 23:31:58: [SM]   [2] Line 1481, l4d2_skill_detect\tracking.sp::Event_TonguePullStopped
+L 07/09/2025 - 23:39:43: [SM] Exception reported: Invalid convar handle 2ca002a1 (error 3)
+L 07/09/2025 - 23:39:43: [SM] Blaming: match_vote.smx
+L 07/09/2025 - 23:39:43: [SM] Call stack trace:
+L 07/09/2025 - 23:39:43: [SM]   [0] ConVar.SetInt
+L 07/09/2025 - 23:39:43: [SM]   [1] Line 102, C:\Users\Sir\Documents\GitHub\L4D2-Competitive-Rework\addons\sourcemod\scripting\match_vote.sp::OnPluginEnd
+L 07/09/2025 - 23:39:43: Error log file session closed.
+L 07/09/2025 - 23:43:02: SourceMod error session started
+L 07/09/2025 - 23:43:02: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:43:02: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:43:09: Error log file session closed.
+L 07/09/2025 - 23:43:27: SourceMod error session started
+L 07/09/2025 - 23:43:27: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:43:27: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:43:34: Error log file session closed.
+L 07/09/2025 - 23:45:57: SourceMod error session started
+L 07/09/2025 - 23:45:57: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:45:57: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:45:57: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 23:45:57: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:3001: Unknown error 101
+L 07/09/2025 - 23:45:57: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:46:44: SourceMod error session started
+L 07/09/2025 - 23:46:44: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:46:44: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:46:51: Error log file session closed.
+L 07/09/2025 - 23:49:14: SourceMod error session started
+L 07/09/2025 - 23:49:14: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:49:14: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:49:14: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 23:49:14: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:3001: Unknown error 101
+L 07/09/2025 - 23:49:14: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:52:33: Error log file session closed.
+L 07/09/2025 - 23:53:31: SourceMod error session started
+L 07/09/2025 - 23:53:31: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:53:31: [SM] Failed to load plugin "nextmap.smx": Nextmap is incompatible with this game.
+L 07/09/2025 - 23:53:38: Error log file session closed.
+L 07/09/2025 - 23:56:01: SourceMod error session started
+L 07/09/2025 - 23:56:01: Info (map "c2m1_highway") (file "/root/Steam/steamapps/common/L4D21/left4dead2/addons/sourcemod/logs/errors_20250709.log")
+L 07/09/2025 - 23:56:01: [UPDATER] --- BEGIN ERRORS FROM AUTOMATIC UPDATER ---
+L 07/09/2025 - 23:56:01: [UPDATER] Could not download "http://update.sourcemod.net/update/"
+L 07/09/2025 - 23:56:01: [UPDATER] Error: Failed to connect to 2606:4700:3030::6815:4001: Unknown error 101
+L 07/09/2025 - 23:56:01: [UPDATER] --- END ERRORS FROM AUTOMATIC UPDATER ---

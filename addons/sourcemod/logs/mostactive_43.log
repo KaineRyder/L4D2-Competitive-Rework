@@ -1,0 +1,14 @@
+L 07/12/2025 - 18:11:57: Query CREATE TABLE IF NOT EXISTS `mostactive` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) PRIMARY KEY NOT NULL,`last_accountuse` int(64) NOT NULL, `timeCT` INT( 16 ), `timeTT` INT( 16 ),`timeSPE` INT( 16 ), `total` INT( 16 ))
+L 07/12/2025 - 18:11:57: Query DELETE FROM `mostactive` WHERE `last_accountuse`<'1750068717' AND `last_accountuse`>'0';
+L 07/12/2025 - 18:11:57: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/12/2025 - 18:11:57: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/12/2025 - 18:12:00: Query UPDATE mostactive SET last_accountuse = 1752315120, playername = 'Kobe Bryant',timeCT = '4567',timeTT = '5079', timeSPE = '343',total = '9989' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/12/2025 - 18:12:00: Query UPDATE mostactive SET last_accountuse = 1752315120, playername = 'ᗜ◡ᗜ',timeCT = '4735',timeTT = '6043', timeSPE = '211',total = '10989' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/12/2025 - 18:12:10: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/12/2025 - 18:12:14: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/12/2025 - 18:19:09: Query UPDATE mostactive SET last_accountuse = 1752315549, playername = 'Kobe Bryant',timeCT = '4840',timeTT = '5216', timeSPE = '348',total = '10404' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/12/2025 - 18:19:09: Query UPDATE mostactive SET last_accountuse = 1752315549, playername = 'ᗜ◡ᗜ',timeCT = '4872',timeTT = '6311', timeSPE = '225',total = '11408' WHERE steamid = 'STEAM_1:1:590841514';
+L 07/12/2025 - 18:19:17: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:590841514'
+L 07/12/2025 - 18:19:24: Query SELECT timeCT, timeTT, timeSPE FROM mostactive WHERE steamid = 'STEAM_1:1:801237070'
+L 07/12/2025 - 18:24:53: Query UPDATE mostactive SET last_accountuse = 1752315893, playername = 'Kobe Bryant',timeCT = '5073',timeTT = '5310', timeSPE = '350',total = '10733' WHERE steamid = 'STEAM_1:1:801237070';
+L 07/12/2025 - 18:25:01: Query UPDATE mostactive SET last_accountuse = 1752315901, playername = 'ᗜ◡ᗜ',timeCT = '4974',timeTT = '6552', timeSPE = '226',total = '11752' WHERE steamid = 'STEAM_1:1:590841514';
