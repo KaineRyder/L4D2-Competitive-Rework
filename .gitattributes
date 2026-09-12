@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Normalize text files to LF in both the repository and working tree.
+# The project is deployed on Linux; keep scripts and configuration files
+# independent of the Windows user's core.autocrlf setting.
+* text=auto eol=lf
