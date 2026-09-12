@@ -3,13 +3,51 @@
 	"1"
 	{
 		"type"	"S"
-		"text"	"{GREEN}纸飞机:{TEAM}本服务器十分感谢Sky服管理Air大佬的帮忙，没有Air就没有今天的纸飞机内战服."
+		"text"	"{GREEN}折翼蝴蝶:{TEAM}本服务器十分感谢Sky服管理Air大佬的帮忙，没有Air就没有今天的Kaine内战服."
 	}
 	"2"
 	{
 		"type"	"S"
-		"text"	"{GREEN}纸飞机:{TEAM}泉此方世界第一可爱！"
+		"text"	"{GREEN}折翼蝴蝶:{TEAM}本服唯一服主: 凯恩Ryder(求生昵称：折翼蝴蝶)."
 	}
-		
+	"3"
+	{
+		"type"	"S"
+		"text"	"{GREEN}折翼蝴蝶:{TEAM}我不熬夜，只是死者复苏......."
+	}
+	"4"
+	{
+		"type"	"S"
+		"text"	"{GREEN}月月:{TEAM}打了队友就不能打我了"
+	}
+	"5"
+	{
+		"type"	"S"
+		"text"	"{GREEN}{TEAM}闲的没事可以 !roll 来投骰子，用法：!roll+数字，或者!clip来投硬币"
 	
+	"6"
+	{
+		"type"	"S"
+		"text"	"{TEAM}萌新对撞服，打游戏娱乐为主，老东西不准压力人，不然可就可就了."
+	}
+	"7"
+	{
+		"type"	"S"
+		"text"	"{GREEN}{TEAM}服务器有定位插件，生还者可以使用看语音，shift+E标记，特感可以用shift标记"
+	}
+	"8"
+	{
+		"type"	"S"
+		"text"	"{GREEN}折翼蝴蝶:{TEAM}本服不搞你那些文化，只打游戏"
+	}
+	"9"
+	{
+		"type"	"S"
+		"text"	"{GREEN}{TEAM}服务器有fakelag插件，用法：!myfakelag 100/!myfl 100，!equalizefakelag/!efl/!epings 投票平衡两队ping"
+	}
+	"10"
+	{
+		"type"	"S"
+		"text"	"小可:{TEAM}那些觉得我好笑的，你先别得意，后面还有更好笑的"
+	}
 }

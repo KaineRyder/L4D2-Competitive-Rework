@@ -1,0 +1,40 @@
+"Groups"
+{
+	/* num = 1, gid = 0x0 */
+	"Default"
+	{
+		"flags"			""
+		"immunity"		"1"
+
+		"Overrides"
+		{
+		}
+	}
+
+	/* num = 2, gid = 0x2C */
+	"Full Admins"
+	{
+		"flags"			"abcdefghiz"
+		"immunity"		"99"
+
+		"Overrides"
+		{
+		}
+	}
+}
+
+"Admins"
+{
+	/* num = 1, aid = 0x5C, serialno = 0x2*/
+	""
+	{
+		"auth"			"steam"
+		"identity"		"1:590841514"
+		"flags"			"z"
+		"immunity"		"99"
+	}
+}
+
+"Overrides"
+{
+}

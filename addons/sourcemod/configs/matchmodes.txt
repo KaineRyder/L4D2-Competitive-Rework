@@ -4,11 +4,11 @@
 	{
 		"zonemod"
 		{
-			"name" "ZoneMod 2.8.9e"
+			"name" "ZoneMod 2.9.1b"
 		}
 		"zoneretro"
 		{
-			"name" "ZoneMod Retro 2.8.9e"
+			"name" "ZoneMod Retro 2.9.1b"
 		}
 		"zm3v3"
 		{
@@ -21,10 +21,6 @@
 		"zm1v1"
 		{
 			"name" "1v1 ZoneMod"
-		}
-		"zonemodQuad"
-		{
-			"name" "Zonemod Quad"
 		}
 	}
 	"NeoMod Configs"
@@ -113,7 +109,7 @@
 	{
 		"zonehunters"
 		{
-			"name" "ZoneHunters 2.8.9e"
+			"name" "ZoneHunters 2.9.1b"
 		}
 		"zh3v3"
 		{
@@ -126,34 +122,6 @@
 		"zh1v1"
 		{
 			"name" "1v1 ZoneHunters"
-		}
-	}
-	"Tank Practice"
-	{
-		"TankPractice"
-		{
-			"name" "TankPractice"
-		}
-	}
-	"GoldMod Configs"
-	{
-		"gold"
-		{
-			"name" "GoldMod SAE v1.6.2"
-		}
-	}
-	"InkMod Configs"
-	{
-		"InkMod"
-		{
-			"name" "InkMod 1.4.8"
-		}
-	}
-	"FDreamMod Configs"
-	{
-		"fdream"
-		{
-			"name" "FDreamMod 1.0.1"
 		}
 	}
 }

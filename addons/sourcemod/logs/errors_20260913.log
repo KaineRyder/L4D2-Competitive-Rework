@@ -1,0 +1,97 @@
+L 09/13/2026 - 00:04:27: SourceMod error session started
+L 09/13/2026 - 00:04:27: Info (map "c2m1_highway") (file "/home/kaine/Steam/steamapps/common/ZonemodVersus/left4dead2/addons/sourcemod/logs/errors_20260913.log")
+L 09/13/2026 - 00:04:27: [SM] Exception reported: Could not retrieve value for key 'playtime_2weeks'
+L 09/13/2026 - 00:04:27: [SM] Blaming: optional/l4d2_player_time.smx
+L 09/13/2026 - 00:04:27: [SM] Call stack trace:
+L 09/13/2026 - 00:04:27: [SM]   [0] JSONObject.GetInt
+L 09/13/2026 - 00:04:27: [SM]   [1] Line 154, D:\ä¯ÀÀÆ÷ÏÂÔØ\CompetitiveWithAnne-2024-02-25-nomysql\CompetitiveWithAnne-2024-02-25\left4dead2\addons\sourcemod\scripting\l4d2_player_time.sp::HTTPResponse_GetOwnedGames
+L 09/13/2026 - 00:04:28: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 400
+L 09/13/2026 - 00:04:28: [optional/l4d2_player_time.smx] Failed to retrieve response (GetUserStatsForGame) - HTTPStatus: 400
+L 09/13/2026 - 00:08:21: [SM] Exception reported: Language phrase "Tag+" not found (arg 3)
+L 09/13/2026 - 00:08:21: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 09/13/2026 - 00:08:21: [SM] Call stack trace:
+L 09/13/2026 - 00:08:21: [SM]   [0] VFormat
+L 09/13/2026 - 00:08:21: [SM]   [1] Line 248, addons\sourcemod\scripting\include\colors.inc::CPrintToChatAll
+L 09/13/2026 - 00:08:21: [SM]   [2] Line 383, addons\sourcemod\scripting\l4d2_skill_detect\report.sp::HandleClear
+L 09/13/2026 - 00:08:21: [SM]   [3] Line 428, addons\sourcemod\scripting\l4d2_skill_detect\tracking.sp::Event_PlayerDeath
+L 09/13/2026 - 00:10:19: [SM] Exception reported: Language phrase "Tag+" not found (arg 3)
+L 09/13/2026 - 00:10:19: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 09/13/2026 - 00:10:19: [SM] Call stack trace:
+L 09/13/2026 - 00:10:19: [SM]   [0] VFormat
+L 09/13/2026 - 00:10:19: [SM]   [1] Line 248, addons\sourcemod\scripting\include\colors.inc::CPrintToChatAll
+L 09/13/2026 - 00:10:19: [SM]   [2] Line 383, addons\sourcemod\scripting\l4d2_skill_detect\report.sp::HandleClear
+L 09/13/2026 - 00:10:19: [SM]   [3] Line 452, addons\sourcemod\scripting\l4d2_skill_detect\tracking.sp::Event_PlayerDeath
+L 09/13/2026 - 00:11:39: [SM] Exception reported: Language phrase "Tag+" not found (arg 3)
+L 09/13/2026 - 00:11:39: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 09/13/2026 - 00:11:39: [SM] Call stack trace:
+L 09/13/2026 - 00:11:39: [SM]   [0] VFormat
+L 09/13/2026 - 00:11:39: [SM]   [1] Line 248, addons\sourcemod\scripting\include\colors.inc::CPrintToChatAll
+L 09/13/2026 - 00:11:39: [SM]   [2] Line 289, addons\sourcemod\scripting\l4d2_skill_detect\report.sp::HandleRockSkeeted
+L 09/13/2026 - 00:11:39: [SM]   [3] Line 1131, addons\sourcemod\scripting\l4d2_skill_detect\tracking.sp::Timer_CheckRockSkeet
+L 09/13/2026 - 00:13:24: [SM] Exception reported: Language phrase "Tag+" not found (arg 3)
+L 09/13/2026 - 00:13:24: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 09/13/2026 - 00:13:24: [SM] Call stack trace:
+L 09/13/2026 - 00:13:24: [SM]   [0] VFormat
+L 09/13/2026 - 00:13:24: [SM]   [1] Line 248, addons\sourcemod\scripting\include\colors.inc::CPrintToChatAll
+L 09/13/2026 - 00:13:24: [SM]   [2] Line 383, addons\sourcemod\scripting\l4d2_skill_detect\report.sp::HandleClear
+L 09/13/2026 - 00:13:24: [SM]   [3] Line 1496, addons\sourcemod\scripting\l4d2_skill_detect\tracking.sp::Event_TonguePullStopped
+L 09/13/2026 - 00:15:33: Error log file session closed.
+L 09/13/2026 - 00:16:46: SourceMod error session started
+L 09/13/2026 - 00:16:46: Info (map "c2m2_fairgrounds") (file "/home/kaine/Steam/steamapps/common/ZonemodVersus/left4dead2/addons/sourcemod/logs/errors_20260913.log")
+L 09/13/2026 - 00:16:46: [SM] Exception reported: Language phrase "Tag+" not found (arg 3)
+L 09/13/2026 - 00:16:46: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 09/13/2026 - 00:16:46: [SM] Call stack trace:
+L 09/13/2026 - 00:16:46: [SM]   [0] VFormat
+L 09/13/2026 - 00:16:46: [SM]   [1] Line 248, addons\sourcemod\scripting\include\colors.inc::CPrintToChatAll
+L 09/13/2026 - 00:16:46: [SM]   [2] Line 383, addons\sourcemod\scripting\l4d2_skill_detect\report.sp::HandleClear
+L 09/13/2026 - 00:16:46: [SM]   [3] Line 1496, addons\sourcemod\scripting\l4d2_skill_detect\tracking.sp::Event_TonguePullStopped
+L 09/13/2026 - 00:21:46: [SM] Exception reported: Language phrase "Tag+++" not found (arg 3)
+L 09/13/2026 - 00:21:46: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 09/13/2026 - 00:21:46: [SM] Call stack trace:
+L 09/13/2026 - 00:21:46: [SM]   [0] VFormat
+L 09/13/2026 - 00:21:46: [SM]   [1] Line 248, addons\sourcemod\scripting\include\colors.inc::CPrintToChatAll
+L 09/13/2026 - 00:21:46: [SM]   [2] Line 239, addons\sourcemod\scripting\l4d2_skill_detect\report.sp::HandleTongueCut
+L 09/13/2026 - 00:21:46: [SM]   [3] Line 1517, addons\sourcemod\scripting\l4d2_skill_detect\tracking.sp::Event_TonguePullStopped
+L 09/13/2026 - 00:22:21: [SM] Exception reported: Language phrase "Tag+++" not found (arg 3)
+L 09/13/2026 - 00:22:21: [SM] Blaming: optional/l4d2_skill_detect.smx
+L 09/13/2026 - 00:22:21: [SM] Call stack trace:
+L 09/13/2026 - 00:22:21: [SM]   [0] VFormat
+L 09/13/2026 - 00:22:21: [SM]   [1] Line 248, addons\sourcemod\scripting\include\colors.inc::CPrintToChatAll
+L 09/13/2026 - 00:22:21: [SM]   [2] Line 239, addons\sourcemod\scripting\l4d2_skill_detect\report.sp::HandleTongueCut
+L 09/13/2026 - 00:22:21: [SM]   [3] Line 1517, addons\sourcemod\scripting\l4d2_skill_detect\tracking.sp::Event_TonguePullStopped
+L 09/13/2026 - 00:25:26: [SM] Exception reported: Client index 0 is invalid
+L 09/13/2026 - 00:25:26: [SM] Blaming: optional/readyup.smx
+L 09/13/2026 - 00:25:26: [SM] Call stack trace:
+L 09/13/2026 - 00:25:26: [SM]   [0] IsClientInGame
+L 09/13/2026 - 00:25:26: [SM]   [1] Line 101, readyup\player.inc::IsPlayer
+L 09/13/2026 - 00:25:26: [SM]   [2] Line 63, readyup\player.inc::SetButtonTime
+L 09/13/2026 - 00:25:26: [SM]   [3] Line 395, readyup.sp::OnClientSayCommand
+L 09/13/2026 - 00:25:38: [SM] Exception reported: Client index 0 is invalid
+L 09/13/2026 - 00:25:38: [SM] Blaming: optional/readyup.smx
+L 09/13/2026 - 00:25:38: [SM] Call stack trace:
+L 09/13/2026 - 00:25:38: [SM]   [0] IsClientInGame
+L 09/13/2026 - 00:25:38: [SM]   [1] Line 101, readyup\player.inc::IsPlayer
+L 09/13/2026 - 00:25:38: [SM]   [2] Line 63, readyup\player.inc::SetButtonTime
+L 09/13/2026 - 00:25:38: [SM]   [3] Line 395, readyup.sp::OnClientSayCommand
+L 09/13/2026 - 00:25:54: [SM] Exception reported: Client index 0 is invalid
+L 09/13/2026 - 00:25:54: [SM] Blaming: optional/readyup.smx
+L 09/13/2026 - 00:25:54: [SM] Call stack trace:
+L 09/13/2026 - 00:25:54: [SM]   [0] IsClientInGame
+L 09/13/2026 - 00:25:54: [SM]   [1] Line 101, readyup\player.inc::IsPlayer
+L 09/13/2026 - 00:25:54: [SM]   [2] Line 63, readyup\player.inc::SetButtonTime
+L 09/13/2026 - 00:25:54: [SM]   [3] Line 395, readyup.sp::OnClientSayCommand
+L 09/13/2026 - 00:26:03: [SM] Exception reported: Client index 0 is invalid
+L 09/13/2026 - 00:26:03: [SM] Blaming: optional/readyup.smx
+L 09/13/2026 - 00:26:03: [SM] Call stack trace:
+L 09/13/2026 - 00:26:03: [SM]   [0] IsClientInGame
+L 09/13/2026 - 00:26:03: [SM]   [1] Line 101, readyup\player.inc::IsPlayer
+L 09/13/2026 - 00:26:03: [SM]   [2] Line 63, readyup\player.inc::SetButtonTime
+L 09/13/2026 - 00:26:03: [SM]   [3] Line 395, readyup.sp::OnClientSayCommand
+L 09/13/2026 - 00:26:15: [SM] Exception reported: Client index 0 is invalid
+L 09/13/2026 - 00:26:15: [SM] Blaming: optional/readyup.smx
+L 09/13/2026 - 00:26:15: [SM] Call stack trace:
+L 09/13/2026 - 00:26:15: [SM]   [0] IsClientInGame
+L 09/13/2026 - 00:26:15: [SM]   [1] Line 101, readyup\player.inc::IsPlayer
+L 09/13/2026 - 00:26:15: [SM]   [2] Line 63, readyup\player.inc::SetButtonTime
+L 09/13/2026 - 00:26:15: [SM]   [3] Line 395, readyup.sp::OnClientSayCommand
+L 09/13/2026 - 00:27:05: Error log file session closed.

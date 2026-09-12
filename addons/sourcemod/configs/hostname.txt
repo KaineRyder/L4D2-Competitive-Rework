@@ -1,9 +1,9 @@
 ServerName
 {
-	"721"
+	"27015"
 	{
-		"baseName"	"GLHF TO GGWP"
+		"baseName"	"凯恩的内战服"
 	}
-	
+
 	
 }
