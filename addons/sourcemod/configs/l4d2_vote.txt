@@ -14,7 +14,17 @@
 			"message""亲虹夏一口"
 		}
 	}
-	
+	"Witch"
+	{
+		"exec vote/witch_on.cfg"
+		{
+			"message""开启 Witch"
+		}
+		"exec vote/witch_off.cfg"
+		{
+			"message""关闭 Witch"
+		}
+	}
 	"切换到官方对抗图"{
 		// 一、死亡中心
 		"sm_map c1m1_hotel"{
@@ -304,14 +314,6 @@
 		}
 		"slotsplayer"{
 			"message""减去所有空余位置"
-		}
-	}
-	"Witch"{
-		"sm_witch_can_spawn 1"{
-			"message""开启 Witch"
-		}
-		"sm_witch_can_spawn 0"{
-			"message""关闭 Witch"
 		}
 	}
 }
