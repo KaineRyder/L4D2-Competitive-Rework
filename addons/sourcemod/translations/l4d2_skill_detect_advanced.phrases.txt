@@ -1,0 +1,65 @@
+"Phrases"
+{
+	"Advanced_MultiControl"
+	{
+		"#format"	"{1:d}"
+		"en"	"{green}★ {olive}Infected team{default} reached {green}{1}-control{default}!"
+		"zho"	"{green}★ {olive}特感隊伍{default}達到 {green}{1} 控{default}！"
+		"chi"	"{green}★ {olive}特感队伍{default}达到 {green}{1} 控{default}！"
+	}
+	"Advanced_RoundEnd"
+	{
+		"en"	"{green}★ The round is over.{default}"
+		"zho"	"{green}★ 本回合結束。{default}"
+		"chi"	"{green}★ 本回合结束。{default}"
+	}
+	"Advanced_ChargerMulti"
+	{
+		"#format"	"{1:N},{2:d}"
+		"en"	"{green}★ {olive}{1}{default} (Charger) hit {green}{2}{default} survivors in one charge!"
+		"zho"	"{green}★ {olive}{1}{default}（Charger）一次衝鋒撞到 {green}{2}{default} 名倖存者！"
+		"chi"	"{green}★ {olive}{1}{default}（Charger）一次冲锋撞到 {green}{2}{default} 名幸存者！"
+	}
+	"Advanced_BoomerMulti"
+	{
+		"#format"	"{1:N},{2:d}"
+		"en"	"{green}★ {olive}{1}{default} (Boomer) vomited on {green}{2}{default} survivors!"
+		"zho"	"{green}★ {olive}{1}{default}（Boomer）一次嘔吐命中 {green}{2}{default} 名倖存者！"
+		"chi"	"{green}★ {olive}{1}{default}（Boomer）一次呕吐命中 {green}{2}{default} 名幸存者！"
+	}
+	"Advanced_TankRockHit"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"	"{green}★ {olive}{1}{default} (Tank) threw a rock at {green}{2}{default}!"
+		"zho"	"{green}★ {olive}{1}{default}（Tank）投擲的石頭擊中了 {green}{2}{default}！"
+		"chi"	"{green}★ {olive}{1}{default}（Tank）投掷的石头击中了 {green}{2}{default}！"
+	}
+	"Advanced_TankHittableIncap"
+	{
+		"#format"	"{1:N},{2:N}"
+		"en"	"{green}★ {olive}{1}{default} (Tank) knocked down {green}{2}{default} with a hittable!"
+		"zho"	"{green}★ {olive}{1}{default}（Tank）用打鐵壓倒了 {green}{2}{default}！"
+		"chi"	"{green}★ {olive}{1}{default}（Tank）用打铁压倒了 {green}{2}{default}！"
+	}
+	"Advanced_TankPunchMulti"
+	{
+		"#format"	"{1:N},{2:d}"
+		"en"	"{green}★ {olive}{1}{default} (Tank) punched {green}{2}{default} survivors at once!"
+		"zho"	"{green}★ {olive}{1}{default}（Tank）一拳同時擊中了 {green}{2}{default} 名倖存者！"
+		"chi"	"{green}★ {olive}{1}{default}（Tank）一拳同时击中了 {green}{2}{default} 名幸存者！"
+	}
+	"Advanced_ChargerGunSolo"
+	{
+		"#format"	"{1:N},{2:N},{3:d},{4:d},{5:s}"
+		"en"	"{green}★ {olive}{1}{default} skeeted charging {olive}{2}{default} for {green}{3} damage{default} in {green}{4}{default} shot{5}."
+		"zho"	"{green}★ {olive}{1}{default} 單獨槍殺了正在衝鋒的 {olive}{2}{default}，造成 {green}{3}{default} 傷害，共開 {green}{4}{default} 槍。"
+		"chi"	"{green}★ {olive}{1}{default} 单独枪杀了正在冲锋的 {olive}{2}{default}，造成 {green}{3}{default} 伤害，共开 {green}{4}{default} 枪。"
+	}
+	"Advanced_ChargerGunTeam"
+	{
+		"#format"	"{1:N},{2:N},{3:d},{4:d},{5:s},{6:s}"
+		"en"	"{green}★ {olive}{1}{default} teamskeeted charging {olive}{2}{default} for {green}{3} damage{default} in {green}{4}{default} shot{5}. Assisted by: {olive}{6}{default}"
+		"zho"	"{green}★ {olive}{1}{default} 集火擊殺了正在衝鋒的 {olive}{2}{default}，造成 {green}{3}{default} 傷害，共開 {green}{4}{default} 槍。協助：{olive}{6}{default}"
+		"chi"	"{green}★ {olive}{1}{default} 集火击杀了正在冲锋的 {olive}{2}{default}，造成 {green}{3}{default} 伤害，共开 {green}{4}{default} 枪。协助：{olive}{6}{default}"
+	}
+}
