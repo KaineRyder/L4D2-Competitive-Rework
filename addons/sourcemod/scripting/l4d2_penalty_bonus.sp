@@ -326,9 +326,9 @@ void DisplayBonus(int iClient = -1)
 
 	for (int iRound = 0; iRound <= iRoundNum; iRound++) {
 		if (g_bRoundOver[iRound]) {
-			FormatEx(sMsgPartHdr, sizeof(sMsgPartHdr), "Round \x05%i\x01 extra bonus", iRound + 1);
+			FormatEx(sMsgPartHdr, sizeof(sMsgPartHdr), "第 \x05%i\x01 回合额外分数", iRound + 1);
 		} else {
-			strcopy(sMsgPartHdr, sizeof(sMsgPartHdr), "Current extra bonus");
+			strcopy(sMsgPartHdr, sizeof(sMsgPartHdr), "当前额外分数");
 		}
 
 		FormatEx(sMsgPartBon, sizeof(sMsgPartBon), "\x04%4d\x01", g_iBonus[iRound]);
@@ -354,9 +354,9 @@ void ReportChange(int iBonusChange, int iClient = -1, bool bAbsoluteSet = false)
 	// report bonus to all
 	char sMsgPartBon[48];
 	if (bAbsoluteSet) { // set to a specific value
-		FormatEx(sMsgPartBon, sizeof(sMsgPartBon), "Extra bonus set to: \x04%i\x01", g_iBonus[RoundNum()]);
+		FormatEx(sMsgPartBon, sizeof(sMsgPartBon), "额外分数设定为： \x04%i\x01", g_iBonus[RoundNum()]);
 	} else {
-		FormatEx(sMsgPartBon, sizeof(sMsgPartBon), "Extra bonus change: %s\x04%i\x01", (iBonusChange > 0) ? "\x04+\x01" : "\x03-\x01", RoundFloat(FloatAbs(float(iBonusChange))));
+		FormatEx(sMsgPartBon, sizeof(sMsgPartBon), "额外分数变动：%s\x04%i\x01", (iBonusChange > 0) ? "\x04+\x01" : "\x03-\x01", RoundFloat(FloatAbs(float(iBonusChange))));
 	}
 
 	if (iClient == -1) {

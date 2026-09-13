@@ -222,23 +222,23 @@ Action:CmdBonus(client, args)
 	{
 		if (InSecondHalfOfRound())
 		{
-			PrintToChat(client, "%s\x01R\x04#1\x01 Bonus: \x05%d\x01/\x05%d\x01 <\x03%.1f%%\x01> [%s]", PLUGIN_TAG, RoundToFloor(fSurvivorBonus[0]), RoundToFloor(fMapBonus + fMaxPillsBonus), CalculateBonusPercent(fSurvivorBonus[0]), sSurvivorState[0]);
+			PrintToChat(client, "%s\x01回合\x041\x01奖励分： \x05%d\x01/\x05%d\x01 <\x03%.1f%%\x01> [%s]", PLUGIN_TAG, RoundToFloor(fSurvivorBonus[0]), RoundToFloor(fMapBonus + fMaxPillsBonus), CalculateBonusPercent(fSurvivorBonus[0]), sSurvivorState[0]);
 		}
-		PrintToChat(client, "%s\x01R\x04#%i\x01 Bonus: \x05%d\x01 <\x03%.1f%%\x01> [HB: \x05%d\x01 <\x03%.1f%%\x01> | DB: \x05%d\x01 <\x03%.1f%%\x01> | Pills: \x05%d\x01 <\x03%.1f%%\x01>]", PLUGIN_TAG, InSecondHalfOfRound() + 1, RoundToFloor(fHealthBonus + fDamageBonus + fPillsBonus), CalculateBonusPercent(fHealthBonus + fDamageBonus + fPillsBonus, fMapHealthBonus + fMapDamageBonus + fMaxPillsBonus), RoundToFloor(fHealthBonus), CalculateBonusPercent(fHealthBonus, fMapHealthBonus), RoundToFloor(fDamageBonus), CalculateBonusPercent(fDamageBonus, fMapDamageBonus), RoundToFloor(fPillsBonus), CalculateBonusPercent(fPillsBonus, fMaxPillsBonus));
+		PrintToChat(client, "%s\x01R\x04#%i\x01 奖励分：\x05%d\x01（\x03%.1f%%\x01）[实血分: \x05%d\x01（\x03%.1f%%\x01） | 虚血分: \x05%d\x01（\x03%.1f%%\x01） | 药分: \x05%d\x01（\x03%.1f%%\x01）]", PLUGIN_TAG, InSecondHalfOfRound() + 1, RoundToFloor(fHealthBonus + fDamageBonus + fPillsBonus), CalculateBonusPercent(fHealthBonus + fDamageBonus + fPillsBonus, fMapHealthBonus + fMapDamageBonus + fMaxPillsBonus), RoundToFloor(fHealthBonus), CalculateBonusPercent(fHealthBonus, fMapHealthBonus), RoundToFloor(fDamageBonus), CalculateBonusPercent(fDamageBonus, fMapDamageBonus), RoundToFloor(fPillsBonus), CalculateBonusPercent(fPillsBonus, fMaxPillsBonus));
 		// R#1 Bonus: 556 <69.5%> [HB: 439 <73.1%> | DB: 117 <58.5%> | Pills: 90 <75.0%>]
 	}
 	else if (StrEqual(sCmdType, "lite"))
 	{
-		PrintToChat(client, "%s\x01R\x04#%i\x01 Bonus: \x05%d\x01 <\x03%.1f%%\x01>", PLUGIN_TAG, InSecondHalfOfRound() + 1, RoundToFloor(fHealthBonus + fDamageBonus + fPillsBonus), CalculateBonusPercent(fHealthBonus + fDamageBonus + fPillsBonus, fMapHealthBonus + fMapDamageBonus + fMaxPillsBonus));
+		PrintToChat(client, "%s\x01R\x04#%i\x01 奖励分：\x05%d\x01 <\x03%.1f%%\x01>", PLUGIN_TAG, InSecondHalfOfRound() + 1, RoundToFloor(fHealthBonus + fDamageBonus + fPillsBonus), CalculateBonusPercent(fHealthBonus + fDamageBonus + fPillsBonus, fMapHealthBonus + fMapDamageBonus + fMaxPillsBonus));
 		// R#1 Bonus: 556 <69.5%>
 	}
 	else
 	{
 		if (InSecondHalfOfRound())
 		{
-			PrintToChat(client, "%s\x01R\x04#1\x01 Bonus: \x05%d\x01 <\x03%.1f%%\x01>", PLUGIN_TAG, RoundToFloor(fSurvivorBonus[0]), CalculateBonusPercent(fSurvivorBonus[0]));
+			PrintToChat(client, "%s\x01回合\x041\x01奖励分： \x05%d\x01 <\x03%.1f%%\x01>", PLUGIN_TAG, RoundToFloor(fSurvivorBonus[0]), CalculateBonusPercent(fSurvivorBonus[0]));
 		}
-		PrintToChat(client, "%s\x01R\x04#%i\x01 Bonus: \x05%d\x01 <\x03%.1f%%\x01> [HB: \x03%.0f%%\x01 | DB: \x03%.0f%%\x01 | Pills: \x03%.0f%%\x01]", PLUGIN_TAG, InSecondHalfOfRound() + 1, RoundToFloor(fHealthBonus + fDamageBonus + fPillsBonus), CalculateBonusPercent(fHealthBonus + fDamageBonus + fPillsBonus, fMapHealthBonus + fMapDamageBonus + fMaxPillsBonus), CalculateBonusPercent(fHealthBonus, fMapHealthBonus), CalculateBonusPercent(fDamageBonus, fMapDamageBonus), CalculateBonusPercent(fPillsBonus, fMaxPillsBonus));
+		PrintToChat(client, "%s\x01R\x04#%i\x01 奖励分：\x05%d\x01 <\x03%.1f%%\x01> [实血分: \x03%.0f%%\x01 | 虚血分: \x03%.0f%%\x01 | 药分: \x03%.0f%%\x01]", PLUGIN_TAG, InSecondHalfOfRound() + 1, RoundToFloor(fHealthBonus + fDamageBonus + fPillsBonus), CalculateBonusPercent(fHealthBonus + fDamageBonus + fPillsBonus, fMapHealthBonus + fMapDamageBonus + fMaxPillsBonus), CalculateBonusPercent(fHealthBonus, fMapHealthBonus), CalculateBonusPercent(fDamageBonus, fMapDamageBonus), CalculateBonusPercent(fPillsBonus, fMaxPillsBonus));
 		// R#1 Bonus: 556 <69.5%> [HB: 73% | DB: 58% | Pills: 75%]
 	}
 	return Plugin_Handled;
@@ -248,13 +248,13 @@ Action:CmdMapInfo(client, args)
 {
 	new Float:fMaxPillsBonus = float(iPillWorth * iTeamSize);
 	new Float:fTotalBonus = fMapBonus + fMaxPillsBonus;
-	PrintToChat(client, "\x01[\x04Hybrid Bonus\x01 :: \x03%iv%i\x01] Map Info", iTeamSize, iTeamSize);
-	PrintToChat(client, "\x01Distance: \x05%d\x01", iMapDistance);
-	PrintToChat(client, "\x01Total Bonus: \x05%d\x01 <\x03100.0%%\x01>", RoundToFloor(fTotalBonus));
-	PrintToChat(client, "\x01Health Bonus: \x05%d\x01 <\x03%.1f%%\x01>", RoundToFloor(fMapHealthBonus), CalculateBonusPercent(fMapHealthBonus, fTotalBonus));
-	PrintToChat(client, "\x01Damage Bonus: \x05%d\x01 <\x03%.1f%%\x01>", RoundToFloor(fMapDamageBonus), CalculateBonusPercent(fMapDamageBonus, fTotalBonus));
-	PrintToChat(client, "\x01Pills Bonus: \x05%d\x01(max \x05%d\x01) <\x03%.1f%%\x01>", iPillWorth, RoundToFloor(fMaxPillsBonus), CalculateBonusPercent(fMaxPillsBonus, fTotalBonus));
-	PrintToChat(client, "\x01Tiebreaker: \x05%d\x01", iPillWorth);
+	PrintToChat(client, "\x01[\x04奖励分\x01 :: \x03%iv%i\x01] 地图信息", iTeamSize, iTeamSize);
+	PrintToChat(client, "\x01路程分：\x05%d\x01", iMapDistance);
+	PrintToChat(client, "\x01总奖励分：\x05%d\x01 <\x03100.0%%\x01>", RoundToFloor(fTotalBonus));
+	PrintToChat(client, "\x01实血分：\x05%d\x01 <\x03%.1f%%\x01>", RoundToFloor(fMapHealthBonus), CalculateBonusPercent(fMapHealthBonus, fTotalBonus));
+	PrintToChat(client, "\x01虚血分：\x05%d\x01 <\x03%.1f%%\x01>", RoundToFloor(fMapDamageBonus), CalculateBonusPercent(fMapDamageBonus, fTotalBonus));
+	PrintToChat(client, "\x01药分：\x05%d\x01（最高\x05%d\x01） <\x03%.1f%%\x01>", iPillWorth, RoundToFloor(fMaxPillsBonus), CalculateBonusPercent(fMaxPillsBonus, fTotalBonus));
+	PrintToChat(client, "\x01决胜分：\x05%d\x01", iPillWorth);
 	// [ScoreMod 2 :: 4v4] Map Info
 	// Distance: 400
 	// Bonus: 920 <100.0%>
@@ -270,7 +270,7 @@ Action:OnTakeDamage(victim, &attacker, &inflictor, &Float:damage, &damagetype)
 	if (!IsSurvivor(victim) || IsPlayerIncap(victim)) return Plugin_Continue;
 
 #if SM2_DEBUG
-	if (GetSurvivorTemporaryHealth(victim) > 0) PrintToChatAll("\x04%N\x01 has \x05%d\x01 temp HP now(damage: \x03%.1f\x01)", victim, GetSurvivorTemporaryHealth(victim), damage);
+	if (GetSurvivorTemporaryHealth(victim) > 0) PrintToChatAll("\x04%N\x01 现在有 \x05%d\x01 点虚血（伤害：\x03%.1f\x01）", victim, GetSurvivorTemporaryHealth(victim), damage);
 #endif
 	iTempHealth[victim] = GetSurvivorTemporaryHealth(victim);
 	
@@ -415,7 +415,7 @@ public Action:L4D2_OnEndVersusModeRound(bool:countSurvivors)
 	{
 		fSurvivorBonus[team] = 0.0;
 		SetConVarInt(hCvarValveSurvivalBonus, 0);
-		FormatEx(sSurvivorState[team], 32, "\x04%s\x01", (iSurvivalMultiplier == 0 ? "wiped out" : "bonus depleted"));
+		FormatEx(sSurvivorState[team], 32, "\x04%s\x01", (iSurvivalMultiplier == 0 ? "中途团灭" : "奖励分耗尽"));
 		bTiebreakerEligibility[team] = (iSurvivalMultiplier == iTeamSize);
 	}
 
@@ -443,16 +443,16 @@ Action:PrintRoundEndStats(Handle:timer)
 {
 	for (new i = 0; i <= InSecondHalfOfRound(); i++)
 	{
-		PrintToChatAll("%s\x01Round \x04%i\x01 Bonus: \x05%d\x01/\x05%d\x01 <\x03%.1f%%\x01> [%s]", PLUGIN_TAG, (i + 1), RoundToFloor(fSurvivorBonus[i]), RoundToFloor(fMapBonus + float(iPillWorth * iTeamSize)), CalculateBonusPercent(fSurvivorBonus[i]), sSurvivorState[i]);
+		PrintToChatAll("%s\x01回合\x04%i\x01奖励分：\x05%d\x01/\x05%d\x01 <\x03%.1f%%\x01> [%s]", PLUGIN_TAG, (i + 1), RoundToFloor(fSurvivorBonus[i]), RoundToFloor(fMapBonus + float(iPillWorth * iTeamSize)), CalculateBonusPercent(fSurvivorBonus[i]), sSurvivorState[i]);
 		// [EQSM :: Round 1] Bonus: 487/1200 <42.7%> [3/4]
 	}
 	
 	if (InSecondHalfOfRound() && bTiebreakerEligibility[0] && bTiebreakerEligibility[1])
 	{
-		PrintToChatAll("%s\x03TIEBREAKER\x01: Team \x04%#1\x01 - \x05%i\x01, Team \x04%#2\x01 - \x05%i\x01", PLUGIN_TAG, iSiDamage[0], iSiDamage[1]);
+		PrintToChatAll("%s\x03平分决胜\x01：队伍 \x04%#1\x01 - \x05%i\x01，队伍 \x04%#2\x01 - \x05%i\x01", PLUGIN_TAG, iSiDamage[0], iSiDamage[1]);
 		if (iSiDamage[0] == iSiDamage[1])
 		{
-			PrintToChatAll("%s\x05Teams have performed absolutely equal! Impossible to decide a clear round winner", PLUGIN_TAG);
+			PrintToChatAll("%s\x05双方表现完全相同，无法判定本回合胜者", PLUGIN_TAG);
 		}
 	}
 

@@ -180,7 +180,7 @@ void WitchDeath_Event(Event hEvent, const char[] name, bool dontBroadcast)
     // Check if Tank Killed the Witch.
     if (IsClientAndInGame(killer) && GetClientTeam(killer) == TEAM_INFECTED && IsTank(killer))
     {
-        CPrintToChatAll("{default}[{green}!{default}] {red}Tank {default}({olive}%N{default}) killed the {red}Witch", killer);
+        CPrintToChatAll("{default}[{green}!{default}] {red}Tank {default}({olive}%N{default}) 击杀了 {red}Witch", killer);
         return;
     }
 
@@ -232,9 +232,9 @@ void PrintWitchDamage(int witch, bool witchAlive = false)
         return;
 
     if (witchAlive)
-        CPrintToChatAll("{default}[{green}!{default}] {blue}Witch {default}had {olive}%d {default}health remaining", witchMaxHealth - damageWitchTotal[witch]);
+        CPrintToChatAll("{default}[{green}!{default}] {blue}Witch {default}剩余 {olive}%d {default}血量", witchMaxHealth - damageWitchTotal[witch]);
     else
-        CPrintToChatAll("{default}[{green}!{default}] {blue}Damage {default}dealt to {blue}Witch:");
+        CPrintToChatAll("{default}[{green}!{default}] 对 {blue}Witch {default}造成的伤害:");
 
     int
         totalPercent,

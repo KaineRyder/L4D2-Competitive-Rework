@@ -19,15 +19,15 @@ void InitPanel()
 	if (cmdFooter == null)
 	{
 		cmdFooter = new Footer();
-		cmdFooter.Add("->1. !ready|!r / !unready|!nr");
-		cmdFooter.Add("->2. !slots #");
-		cmdFooter.Add("->3. !voteboss <tank> <witch>");
-		cmdFooter.Add("->4. !match / !rmatch");
-		cmdFooter.Add("->5. !show / !hide");
-		cmdFooter.Add("->6. !setscores <survs> <inf>");
-		cmdFooter.Add("->7. !lerps");
-		cmdFooter.Add("->8. !secondary");
-		cmdFooter.Add("->9. !forcestart / !fs");
+		cmdFooter.Add("->1. !ready|!r / !unready|!nr - 准备/取消准备");
+		cmdFooter.Add("->2. !slots # - 设置服务器人数");
+		cmdFooter.Add("->3. !voteboss <tank> <witch> - 设置 Boss 位置");
+		cmdFooter.Add("->4. !match / !rmatch - 加载/卸载插件");
+		cmdFooter.Add("->5. !show / !hide - 显示/隐藏准备菜单");
+		cmdFooter.Add("->6. !setscores <survs> <inf> - 设置双方分数");
+		cmdFooter.Add("->7. !lerps - 查看所有人的 lerp 值");
+		cmdFooter.Add("->8. !secondary - 设置拾取副武器切换");
+		cmdFooter.Add("->9. !forcestart / !fs - 管理员强制开始");
 	}
 	
 	curCmd = 0;
@@ -85,15 +85,15 @@ void UpdatePanel()
 	g_cvServerNamer.GetString(ServerName, sizeof(ServerName));
 	
 	l4d_ready_cfg_name.GetString(cfgName, sizeof(cfgName));
-	FormatEx(ServerBuffer, sizeof(ServerBuffer), "▸ Server: %s \n▸ Slots: %d/%d\n▸ Config: %s", ServerName, GetSeriousClientCount(), FindConVar("sv_maxplayers").IntValue, cfgName);
+	FormatEx(ServerBuffer, sizeof(ServerBuffer), "▸ 服务器: %s \n▸ 人数: %d/%d\n▸ 配置: %s", ServerName, GetSeriousClientCount(), FindConVar("sv_maxplayers").IntValue, cfgName);
 	menuPanel.DrawText(ServerBuffer);
 	
-	FormatTime(ServerBuffer, sizeof(ServerBuffer), "%m/%d/%Y - %I:%M%p");
+	FormatTime(ServerBuffer, sizeof(ServerBuffer), "%Y/%m/%d - %H:%M");
 	Format(ServerBuffer, sizeof(ServerBuffer), "▸ %s (%02d:%02d)", ServerBuffer, iPassTime / 60, iPassTime % 60);
 	menuPanel.DrawText(ServerBuffer);
 	
 	menuPanel.DrawText(" ");
-	menuPanel.DrawText("▸ Commands:");
+	menuPanel.DrawText("▸ 指令:");
 	menuPanel.DrawText(FooterGet(cmdFooter, curCmd));
 	menuPanel.DrawText(" ");
 	
@@ -157,7 +157,7 @@ void UpdatePanel()
 	{
 		survivorBuffer[bufLen] = '\0';
 		ReplaceString(survivorBuffer, sizeof(survivorBuffer), "#", "_");
-		FormatEx(nameBuf, sizeof(nameBuf), "->%d. Survivors%s", ++textCount, isTeamReadyMode ? teamReadySymbol[survivorReady] : "");
+		FormatEx(nameBuf, sizeof(nameBuf), "->%d. 生还方%s", ++textCount, isTeamReadyMode ? teamReadySymbol[survivorReady] : "");
 		menuPanel.DrawText(nameBuf);
 		menuPanel.DrawText(survivorBuffer);
 	}
@@ -167,7 +167,7 @@ void UpdatePanel()
 	{
 		infectedBuffer[bufLen] = '\0';
 		ReplaceString(infectedBuffer, sizeof(infectedBuffer), "#", "_");
-		FormatEx(nameBuf, sizeof(nameBuf), "->%d. Infected%s", ++textCount, isTeamReadyMode ? teamReadySymbol[infectedReady] : "");
+		FormatEx(nameBuf, sizeof(nameBuf), "->%d. 特感方%s", ++textCount, isTeamReadyMode ? teamReadySymbol[infectedReady] : "");
 		menuPanel.DrawText(nameBuf);
 		menuPanel.DrawText(infectedBuffer);
 	}
@@ -180,7 +180,7 @@ void UpdatePanel()
 		if (bufLen != 0)
 		{
 			casterBuffer[bufLen] = '\0';
-			FormatEx(nameBuf, sizeof(nameBuf), "->%d. Caster%s", ++textCount, casterCount > 1 ? "s" : "");
+			FormatEx(nameBuf, sizeof(nameBuf), "->%d. 解说", ++textCount);
 			menuPanel.DrawText(nameBuf);
 			ReplaceString(casterBuffer, sizeof(casterBuffer), "#", "_", true);
 			menuPanel.DrawText(casterBuffer);
@@ -191,7 +191,7 @@ void UpdatePanel()
 	if (bufLen != 0)
 	{
 		specBuffer[bufLen] = '\0';
-		FormatEx(nameBuf, sizeof(nameBuf), "->%d. Spectator%s", ++textCount, specCount > 1 ? "s" : "");
+		FormatEx(nameBuf, sizeof(nameBuf), "->%d. 旁观者", ++textCount);
 		menuPanel.DrawText(nameBuf);
 		ReplaceString(specBuffer, sizeof(specBuffer), "#", "_");
 		if (playerCount > l4d_ready_max_players.IntValue && specCount - casterCount > 1)
