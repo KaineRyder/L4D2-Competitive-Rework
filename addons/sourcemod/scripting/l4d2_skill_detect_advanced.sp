@@ -6,7 +6,7 @@
 #include <sdkhooks>
 #include <multicolors>
 
-#define PLUGIN_VERSION "1.2.4-20260913"
+#define PLUGIN_VERSION "1.2.5-20260914"
 
 #define MAX_EDICTS 2048
 
@@ -80,6 +80,7 @@ int g_iChargerGunLethalAttacker[MAXPLAYERS + 1];
 int g_iChargerLastGunAttacker[MAXPLAYERS + 1];
 float g_fChargerLastChargingGun[MAXPLAYERS + 1];
 bool g_bChargerChargeActive[MAXPLAYERS + 1];
+bool g_bChargerChargeHitTarget[MAXPLAYERS + 1];
 float g_fChargerChargeStart[MAXPLAYERS + 1];
 float g_fChargerChargeEndGrace[MAXPLAYERS + 1];
 
@@ -352,7 +353,7 @@ public void Event_ChargerImpact(Event event, const char[] name, bool dontBroadca
 	int charger = GetClientOfUserId(event.GetInt("userid"));
 	int victim = GetClientOfUserId(event.GetInt("victim"));
 	RegisterChargerVictim(charger, victim);
-	EndChargerCharge(charger);
+	EndChargerCharge(charger, true);
 }
 
 public void Event_ChargerCarryStart(Event event, const char[] name, bool dontBroadcast)
@@ -360,7 +361,7 @@ public void Event_ChargerCarryStart(Event event, const char[] name, bool dontBro
 	int charger = GetClientOfUserId(event.GetInt("userid"));
 	int victim = GetClientOfUserId(event.GetInt("victim"));
 	RegisterChargerVictim(charger, victim);
-	EndChargerCharge(charger);
+	EndChargerCharge(charger, true);
 }
 
 public void Event_PlayerNowIt(Event event, const char[] name, bool dontBroadcast)
@@ -447,7 +448,8 @@ public void Event_PlayerHurt(Event event, const char[] name, bool dontBroadcast)
 void TrackChargerGunDamage(Event event, int charger)
 {
 	if (!g_hCvarEnable.BoolValue || !g_hCvarChargerTeamKill.BoolValue ||
-		!IsValidInfected(charger) || GetZombieClass(charger) != ZC_CHARGER)
+		!IsValidInfected(charger) || GetZombieClass(charger) != ZC_CHARGER ||
+		g_bChargerChargeHitTarget[charger])
 	{
 		return;
 	}
@@ -757,6 +759,7 @@ public void OnTakeDamagePost(
 	const float damagePosition[3])
 {
 	if (IsValidInfected(victim) && GetZombieClass(victim) == ZC_CHARGER &&
+		!g_bChargerChargeHitTarget[victim] &&
 		IsValidSurvivor(attacker) &&
 		IsLikelyChargerFirearmDamage(inflictor, damagetype) &&
 		IsChargerCharging(victim))
@@ -851,7 +854,7 @@ public Action Timer_CheckMultiControl(Handle timer)
 	g_iControlCount = controlCount;
 
 	int aliveSurvivors = CountAliveSurvivors();
-	if (!g_bControlRoundEndAnnounced && aliveSurvivors > 0 && controlCount > aliveSurvivors)
+	if (!g_bControlRoundEndAnnounced && aliveSurvivors > 0 && controlCount >= aliveSurvivors)
 	{
 		CPrintToChatAll("%t", "Advanced_RoundEnd");
 		g_bControlRoundEndAnnounced = true;
@@ -1519,15 +1522,30 @@ void BeginChargerCharge(int charger)
 		return;
 	}
 
+	g_bChargerChargeHitTarget[charger] = false;
 	g_bChargerChargeActive[charger] = true;
 	g_fChargerChargeStart[charger] = now;
 	g_fChargerChargeEndGrace[charger] = 0.0;
 }
 
-void EndChargerCharge(int charger)
+void EndChargerCharge(int charger, bool hitTarget = false)
 {
-	if (charger <= 0 || charger > MaxClients ||
-		!g_bChargerChargeActive[charger])
+	if (charger <= 0 || charger > MaxClients)
+	{
+		return;
+	}
+
+	if (hitTarget)
+	{
+		// The game can leave m_isCharging set for a few frames after impact.
+		// Lock this charge out so post-impact shots are not reported as a
+		// charger kill while charging. The lock is cleared by the next charge.
+		ResetChargerGunState(charger);
+		g_bChargerChargeHitTarget[charger] = true;
+		return;
+	}
+
+	if (!g_bChargerChargeActive[charger])
 	{
 		return;
 	}
@@ -1540,6 +1558,7 @@ bool IsChargerChargeWindow(int charger, float now)
 {
 	if (charger <= 0 || charger > MaxClients ||
 		!g_bChargerChargeActive[charger] ||
+		g_bChargerChargeHitTarget[charger] ||
 		g_fChargerChargeStart[charger] <= 0.0)
 	{
 		return false;
@@ -1690,6 +1709,7 @@ void ResetChargerGunState(int client)
 	g_iChargerLastGunAttacker[client] = 0;
 	g_fChargerLastChargingGun[client] = 0.0;
 	g_bChargerChargeActive[client] = false;
+	g_bChargerChargeHitTarget[client] = false;
 	g_fChargerChargeStart[client] = 0.0;
 	g_fChargerChargeEndGrace[client] = 0.0;
 

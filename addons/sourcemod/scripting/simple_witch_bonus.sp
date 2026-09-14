@@ -1,154 +1,254 @@
 #pragma semicolon 1
+#pragma newdecls required
 
 #include <sourcemod>
 #include <sdktools>
-#include <sdkhooks>
 #include <l4d2_penalty_bonus>
 
-#define IS_VALID_CLIENT(%1)     (%1 > 0 && %1 <= MaxClients)
-#define IS_SURVIVOR(%1)         (GetClientTeam(%1) == 2)
-#define IS_INFECTED(%1)         (GetClientTeam(%1) == 3)
-#define IS_VALID_INGAME(%1)     (IS_VALID_CLIENT(%1) && IsClientInGame(%1))
-#define IS_VALID_SURVIVOR(%1)   (IS_VALID_INGAME(%1) && IS_SURVIVOR(%1))
-#define IS_VALID_INFECTED(%1)   (IS_VALID_INGAME(%1) && IS_INFECTED(%1))
-#define IS_SURVIVOR_ALIVE(%1)   (IS_VALID_SURVIVOR(%1) && IsPlayerAlive(%1))
-#define IS_INFECTED_ALIVE(%1)   (IS_VALID_INFECTED(%1) && IsPlayerAlive(%1))
+#define TEAM_SURVIVOR 2
 
-
-new     bool:           g_bLateLoad                                         = false;
-new     Handle:         g_hCvarBonus                                        = INVALID_HANDLE;
-new     Handle:         g_hCvarPrint                                        = INVALID_HANDLE;
-new     Handle:         g_hCvarBonusAlways                                  = INVALID_HANDLE;
-new     Handle:         g_hTrieEntityCreated                                = INVALID_HANDLE;
-new     Handle:         g_hWitchTrie                                        = INVALID_HANDLE;
-
-// trie values: OnEntityCreated classname
-enum strOEC
+public Plugin myinfo =
 {
-    OEC_WITCH
+	name = "Witch Score Bonus",
+	author = "Tabun, Zonemod",
+	description = "Adds round bonus for Witch kills and a penalty for Witch incapacitations.",
+	version = "1.0.0",
+	url = "https://github.com/SirPlease/L4D2-Competitive-Rework"
 };
 
+ConVar
+	g_hCvarEnable,
+	g_hCvarKillBonus,
+	g_hCvarOneShotBonus,
+	g_hCvarIncapPenalty,
+	g_hCvarPrint,
+	g_hCvarBonusAlways;
 
-public Plugin:myinfo = 
+bool g_bPenaltyBonusAvailable;
+bool g_bMissingPenaltyBonusLogged;
+bool g_bIncapPenaltyGiven[MAXPLAYERS + 1];
+
+public void OnPluginStart()
 {
-    name = "Simple Witch Kill Bonus",
-    author = "Tabun",
-    description = "Gives bonus for witches getting killed without doing damage to survivors (uses pbonus).",
-    version = "0.9.3",
-    url = "none"
-}
-
-public APLRes:AskPluginLoad2(Handle:myself, bool:late, String:error[], err_max)
-{
-    g_bLateLoad = late;    
-    return APLRes_Success;
-}
-
-public OnPluginStart()
-{
-    HookEvent("witch_spawn", Event_WitchSpawned, EventHookMode_Post);
-    HookEvent("witch_killed", Event_WitchKilled, EventHookMode_Post);
-
-    g_hCvarBonus = CreateConVar("sm_simple_witch_bonus", "25", "Bonus points to award for clean witch kills.", FCVAR_NONE, true, 0.0);
-    g_hCvarPrint = CreateConVar("sm_witch_bonus_print", "1", "Should we print when we award points for killing the witch?", FCVAR_NONE, true, 0.0, true, 1.0);
-    g_hCvarBonusAlways = CreateConVar("sm_witch_bonus_always", "0", "Should you receive points when something other than survivors kills witch?", FCVAR_NONE, true, 0.0, true, 1.0);
-
-    g_hWitchTrie = CreateTrie();
-    g_hTrieEntityCreated = CreateTrie();
-    SetTrieValue(g_hTrieEntityCreated, "witch", OEC_WITCH);
-
-    if (g_bLateLoad) {
-        for (new client = 1; client <= MaxClients; client++) {
-            if (IS_VALID_INGAME(client)) {
-                SDKHook(client, SDKHook_OnTakeDamage, OnTakeDamageByWitch);
-            }
-        }
-    }
-}
-
-// player damage tracking
-public OnClientPutInServer(client)
-{
-    SDKHook(client, SDKHook_OnTakeDamage, OnTakeDamageByWitch);
-}
-public OnClientDisconnect(client)
-{
-    SDKUnhook(client, SDKHook_OnTakeDamage, OnTakeDamageByWitch);
-}
-
-// entity destruction
-public OnEntityDestroyed(entity)
-{
-    decl String:witch_key[10];
-    FormatEx(witch_key, sizeof(witch_key), "%x", entity);
-    
-    RemoveFromTrie(g_hWitchTrie, witch_key);
-}
-
-// witch tracking
-Action: Event_WitchSpawned(Handle:event, const String:name[], bool:dontBroadcast)
-{
-    new witch = GetEventInt(event, "witchid");    
-    decl String:witch_key[10];
-    FormatEx(witch_key, sizeof(witch_key), "%x", witch);
-    SetTrieValue(g_hWitchTrie, witch_key, 0);
-}
-
-// kill tracking
-Action: Event_WitchKilled(Handle:event, const String:name[], bool:dontBroadcast)
-{
-    new witch = GetEventInt(event, "witchid");
-    new attacker = GetClientOfUserId( GetEventInt(event, "userid") );
-
-    // only award bonus if survivors deal the last blow
-    if ( !IS_VALID_SURVIVOR(attacker) &&  GetConVarBool(g_hCvarBonusAlways) == false ) {
-        return Plugin_Continue;
-    }
-    
-    // only award bonus if witch didn't get a scratch off
-    decl String:witch_key[10];
-    FormatEx(witch_key, sizeof(witch_key), "%x", witch);
-
-    new witch_check;
-    if (!GetTrieValue(g_hWitchTrie, witch_key, witch_check) || !witch_check) {
-        GiveWitchBonus();
-    }
-
-    return Plugin_Continue;
-}
-
-// track witch doing damage to survivors
-Action: OnTakeDamageByWitch(victim, &attacker, &inflictor, &Float:damage, &damagetype)
-{
-    if (IS_VALID_SURVIVOR(victim) && damage > 0.0) {
-        if (IsWitch(attacker)) {
-            decl String:witch_key[10];
-            FormatEx(witch_key, sizeof(witch_key), "%x", attacker);
-            SetTrieValue(g_hWitchTrie, witch_key, 1);
-        }
-    }
-}
-
-// apply bonus, through PenaltyBonus
-stock GiveWitchBonus()
-{
-    new iBonus = GetConVarInt(g_hCvarBonus);
-    if(GetConVarBool(g_hCvarPrint) == true)
+	if (GetEngineVersion() != Engine_Left4Dead2)
 	{
-        PrintToChatAll("\x01Killing the witch has awarded: \x05%d \x01points!", iBonus);
-    }
-    PBONUS_AddRoundBonus(iBonus, true);
+		SetFailState("This plugin supports Left 4 Dead 2 only.");
+	}
+
+	g_hCvarEnable = CreateConVar(
+		"sm_witch_score_enable", "1",
+		"Enable Witch kill bonuses and Witch incap penalties.",
+		FCVAR_NONE, true, 0.0, true, 1.0);
+	g_hCvarKillBonus = CreateConVar(
+		"sm_simple_witch_bonus", "20",
+		"Round bonus for a non-one-shot Witch kill.",
+		FCVAR_NONE, true, 0.0);
+	g_hCvarOneShotBonus = CreateConVar(
+		"sm_witch_oneshot_bonus", "50",
+		"Round bonus for a one-shot Witch kill.",
+		FCVAR_NONE, true, 0.0);
+	g_hCvarIncapPenalty = CreateConVar(
+		"sm_witch_incap_penalty", "40",
+		"Points deducted immediately when a Witch incapacitates a survivor.",
+		FCVAR_NONE, true, 0.0);
+	g_hCvarPrint = CreateConVar(
+		"sm_witch_bonus_print", "1",
+		"Print Witch score changes to chat.",
+		FCVAR_NONE, true, 0.0, true, 1.0);
+	g_hCvarBonusAlways = CreateConVar(
+		"sm_witch_bonus_always", "0",
+		"Award the kill bonus even when the final Witch attacker is not a survivor.",
+		FCVAR_NONE, true, 0.0, true, 1.0);
+
+	HookEvent("witch_killed", Event_WitchKilled, EventHookMode_Post);
+	HookEventEx("player_incapacitated_start", Event_PlayerIncapacitated, EventHookMode_Post);
+	HookEventEx("player_incapacitated", Event_PlayerIncapacitated, EventHookMode_Post);
+	HookEvent("revive_success", Event_ReviveSuccess, EventHookMode_Post);
+	HookEvent("round_start", Event_RoundStart, EventHookMode_PostNoCopy);
+
+	g_bPenaltyBonusAvailable = HasPenaltyBonus();
+	ResetIncapState();
 }
 
-stock bool: IsWitch(entity)
+public void OnLibraryAdded(const char[] name)
 {
-    if (!IsValidEntity(entity)) {
-        return false;
-    }
-    
-    decl String: classname[24];
-    new strOEC: classnameOEC;
-    GetEdictClassname(entity, classname, sizeof(classname));
+	if (StrEqual(name, "penaltybonus"))
+	{
+		g_bPenaltyBonusAvailable = HasPenaltyBonus();
+	}
+}
 
-    return !(!GetTrieValue(g_hTrieEntityCreated, classname, classnameOEC) || classnameOEC != OEC_WITCH);
+public void OnLibraryRemoved(const char[] name)
+{
+	if (StrEqual(name, "penaltybonus"))
+	{
+		g_bPenaltyBonusAvailable = false;
+	}
+}
+
+public void OnClientPutInServer(int client)
+{
+	if (client > 0 && client <= MaxClients)
+	{
+		g_bIncapPenaltyGiven[client] = false;
+	}
+}
+
+public void OnClientDisconnect(int client)
+{
+	if (client > 0 && client <= MaxClients)
+	{
+		g_bIncapPenaltyGiven[client] = false;
+	}
+}
+
+void Event_RoundStart(Event event, const char[] name, bool dontBroadcast)
+{
+	ResetIncapState();
+}
+
+void Event_WitchKilled(Event event, const char[] name, bool dontBroadcast)
+{
+	if (!g_hCvarEnable.BoolValue)
+	{
+		return;
+	}
+
+	int attacker = GetClientOfUserId(event.GetInt("userid"));
+	if (!g_hCvarBonusAlways.BoolValue && !IsSurvivor(attacker))
+	{
+		return;
+	}
+
+	bool oneShot = event.GetBool("oneshot", false);
+	int bonus = oneShot ? g_hCvarOneShotBonus.IntValue : g_hCvarKillBonus.IntValue;
+	if (bonus <= 0)
+	{
+		return;
+	}
+
+	if (AddRoundScore(bonus) && g_hCvarPrint.BoolValue)
+	{
+		if (oneShot && IsSurvivor(attacker))
+		{
+			PrintToChatAll("\x04[妹子加分]\x01 %N 一枪秒妹：生还者 \x05+%d\x01 分。", attacker, bonus);
+		}
+		else if (oneShot)
+		{
+			PrintToChatAll("\x04[妹子加分]\x01 一枪秒妹：生还者 \x05+%d\x01 分。", bonus);
+		}
+		else
+		{
+			PrintToChatAll("\x04[妹子加分]\x01 集火/引秒击杀女巫：\x05+%d\x01 分。", bonus);
+		}
+	}
+}
+
+void Event_PlayerIncapacitated(Event event, const char[] name, bool dontBroadcast)
+{
+	if (!g_hCvarEnable.BoolValue)
+	{
+		return;
+	}
+
+	int victim = GetClientOfUserId(event.GetInt("userid"));
+	if (!IsSurvivor(victim) || g_bIncapPenaltyGiven[victim])
+	{
+		return;
+	}
+
+	int attackerEntity = event.GetInt("attackerentid", -1);
+	if (!IsWitch(attackerEntity))
+	{
+		// Some event producers only expose the entity index in "attacker".
+		int fallbackEntity = event.GetInt("attacker", -1);
+		if (fallbackEntity > MaxClients && IsWitch(fallbackEntity))
+		{
+			attackerEntity = fallbackEntity;
+		}
+	}
+
+	if (!IsWitch(attackerEntity))
+	{
+		return;
+	}
+
+	int penalty = g_hCvarIncapPenalty.IntValue;
+	if (penalty <= 0)
+	{
+		return;
+	}
+
+	// This is deliberately done from the incap event, not player_death. The
+	// penalty therefore takes effect as soon as the Witch puts the survivor down.
+	if (!AddRoundScore(-penalty))
+	{
+		return;
+	}
+
+	// L4D2 can emit both player_incapacitated_start and player_incapacitated
+	// for the same incap. Clear this flag only after a successful revive.
+	g_bIncapPenaltyGiven[victim] = true;
+
+	if (g_hCvarPrint.BoolValue)
+	{
+		PrintToChatAll("\x04[妹子加分]\x01 %N 被女巫放倒：\x03-%d\x01 分。", victim, penalty);
+	}
+}
+
+void Event_ReviveSuccess(Event event, const char[] name, bool dontBroadcast)
+{
+	int survivor = GetClientOfUserId(event.GetInt("subject"));
+	if (survivor > 0 && survivor <= MaxClients)
+	{
+		g_bIncapPenaltyGiven[survivor] = false;
+	}
+}
+
+bool AddRoundScore(int amount)
+{
+	if (!g_bPenaltyBonusAvailable)
+	{
+		if (!g_bMissingPenaltyBonusLogged)
+		{
+			LogError("Witch score change skipped because l4d2_penalty_bonus is not loaded.");
+			g_bMissingPenaltyBonusLogged = true;
+		}
+		return false;
+	}
+
+	PBONUS_AddRoundBonus(amount, true);
+	return true;
+}
+
+bool HasPenaltyBonus()
+{
+	return LibraryExists("penaltybonus") &&
+		GetFeatureStatus(FeatureType_Native, "PBONUS_AddRoundBonus") == FeatureStatus_Available;
+}
+
+bool IsSurvivor(int client)
+{
+	return client > 0 && client <= MaxClients && IsClientInGame(client) &&
+		GetClientTeam(client) == TEAM_SURVIVOR;
+}
+
+bool IsWitch(int entity)
+{
+	if (entity <= MaxClients || !IsValidEntity(entity))
+	{
+		return false;
+	}
+
+	char classname[32];
+	GetEntityClassname(entity, classname, sizeof(classname));
+	return StrContains(classname, "witch", false) == 0;
+}
+
+void ResetIncapState()
+{
+	for (int client = 1; client <= MaxClients; client++)
+	{
+		g_bIncapPenaltyGiven[client] = false;
+	}
 }

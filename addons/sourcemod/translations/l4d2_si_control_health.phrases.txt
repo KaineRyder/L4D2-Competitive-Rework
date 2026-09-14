@@ -1,0 +1,8 @@
+"Phrases"
+{
+	"HealthRemaining"
+	{
+		"#format" "{1:N},{2:s},{3:d}"
+		"en" "{red}{1}{default} ({green}{2}{default}) had {olive}{3}{default} health remaining!"
+	}
+}

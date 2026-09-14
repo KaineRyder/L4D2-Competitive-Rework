@@ -6,9 +6,11 @@
 #include <colors>
 
 #define FILE_PATH		"configs/l4d2_vote.txt"
+#define WITCH_STATE_FILE	"data/l4d2_vote_witch_state.txt"
 
 Handle g_hVote = INVALID_HANDLE;
 Handle g_hCfgsKV = INVALID_HANDLE;
+ConVar g_hWitchCanSpawn = null;
 
 enum voteType
 {
@@ -18,7 +20,7 @@ enum voteType
 }
 voteType g_voteType = None;
 
-char g_sCfg[32];
+char g_sCfg[PLATFORM_MAX_PATH];
  
 public Plugin myinfo =
 {
@@ -48,8 +50,95 @@ public void OnPluginStart()
 	RegConsoleCmd("sm_votekick", Command_VoteKick);
 	RegConsoleCmd("sm_votespec", Command_VoteSpec);
 	RegAdminCmd("sm_hp", Command_ServerHp, ADMFLAG_ROOT);
+	RegServerCmd("sm_witch_vote_state", Command_WitchVoteState);
+	g_hWitchCanSpawn = FindConVar("sm_witch_can_spawn");
 	
 	LoadTranslations("l4d2_vote.phrases");
+}
+
+public void OnConfigsExecuted()
+{
+	// Confogl applies its tracked cvars during config execution. Restore the
+	// vote-selected state after those defaults have been applied.
+	CreateTimer(0.1, RestoreWitchState, _, TIMER_FLAG_NO_MAPCHANGE);
+}
+
+public Action Command_WitchVoteState(int args)
+{
+	if (args != 1)
+	{
+		PrintToServer("[l4d2_vote] Usage: sm_witch_vote_state <0|1>");
+		return Plugin_Handled;
+	}
+
+	char value[8];
+	GetCmdArg(1, value, sizeof(value));
+	int enabled = StringToInt(value) != 0 ? 1 : 0;
+	SaveWitchState(enabled);
+
+	if (g_hWitchCanSpawn == null)
+	{
+		g_hWitchCanSpawn = FindConVar("sm_witch_can_spawn");
+	}
+	if (g_hWitchCanSpawn != null)
+	{
+		SetConVarInt(g_hWitchCanSpawn, enabled);
+	}
+	return Plugin_Handled;
+}
+
+public Action RestoreWitchState(Handle timer)
+{
+	if (g_hWitchCanSpawn == null)
+	{
+		g_hWitchCanSpawn = FindConVar("sm_witch_can_spawn");
+	}
+
+	int enabled;
+	if (g_hWitchCanSpawn != null && LoadWitchState(enabled))
+	{
+		SetConVarInt(g_hWitchCanSpawn, enabled);
+	}
+	return Plugin_Stop;
+}
+
+void SaveWitchState(int enabled)
+{
+	char path[PLATFORM_MAX_PATH];
+	BuildPath(Path_SM, path, sizeof(path), WITCH_STATE_FILE);
+
+	File file = OpenFile(path, "w");
+	if (file == null)
+	{
+		LogError("Unable to save Witch state to %s", path);
+		return;
+	}
+	file.WriteLine("%d", enabled != 0 ? 1 : 0);
+	delete file;
+}
+
+bool LoadWitchState(int &enabled)
+{
+	char path[PLATFORM_MAX_PATH];
+	BuildPath(Path_SM, path, sizeof(path), WITCH_STATE_FILE);
+
+	File file = OpenFile(path, "r");
+	if (file == null)
+	{
+		return false;
+	}
+
+	char value[8];
+	bool read = file.ReadLine(value, sizeof(value));
+	delete file;
+	if (!read)
+	{
+		return false;
+	}
+
+	TrimString(value);
+	enabled = StringToInt(value) != 0 ? 1 : 0;
+	return true;
 }
 
 stock void CheatCommand(int Client, const char[] command, const char[] arguments)
@@ -63,7 +152,7 @@ stock void CheatCommand(int Client, const char[] command, const char[] arguments
 	SetUserFlagBits(Client, admindata);
 }
 
-public Action Command_ServerHp(int client, any args)
+public Action Command_ServerHp(int client, int args)
 {
 	for(int i = 1; i <= MaxClients; i++)
 	{
@@ -76,7 +165,7 @@ public Action Command_ServerHp(int client, any args)
 	return Plugin_Handled;
 }
 
-public Action CommondVote(int client, any args)
+public Action CommondVote(int client, int args)
 {
 	if (!IsClientInGame(client) || IsFakeClient(client)) return Plugin_Handled;
 	if (GetClientTeam(client) == 1) 
@@ -87,16 +176,20 @@ public Action CommondVote(int client, any args)
 	
 	if (args > 0)
 	{
-		char sCfg[64];
-		char sBuffer[256];
+		char sCfg[PLATFORM_MAX_PATH];
+		char sPath[PLATFORM_MAX_PATH];
+		char sCommand[PLATFORM_MAX_PATH];
+		char sMessage[256];
 		GetCmdArg(1, sCfg, sizeof(sCfg));
-		BuildPath(Path_SM, sBuffer, sizeof(sBuffer), "../../cfg/%s", sCfg);
-		if (DirExists(sBuffer))
+		BuildPath(Path_SM, sPath, sizeof(sPath), "../../cfg/%s", sCfg);
+		if (FileExists(sPath))
 		{
-			FindConfigName(sCfg, sBuffer, sizeof(sBuffer));
-			if (StartVote(client, sBuffer))
+			FormatEx(sCommand, sizeof(sCommand), "exec %s", sCfg);
+			strcopy(sMessage, sizeof(sMessage), sCommand);
+			FindConfigName(sCommand, sMessage, sizeof(sMessage));
+			if (StartVote(client, sMessage))
 			{
-				strcopy(g_sCfg, sizeof(g_sCfg), sCfg);
+				strcopy(g_sCfg, sizeof(g_sCfg), sCommand);
 				FakeClientCommand(client, "Vote Yes");
 			}
 			return Plugin_Handled;
@@ -400,11 +493,22 @@ bool StartVote(int client, const char[] cfgname)
 		
 		char sBuffer[64];
 		g_hVote = CreateBuiltinVote(VoteActionHandler, BuiltinVoteType_Custom_YesNo, BuiltinVoteAction_Cancel | BuiltinVoteAction_VoteEnd | BuiltinVoteAction_End);
+		if (g_hVote == null)
+		{
+			CPrintToChat(client, "%t", "Vote_Process");
+			return false;
+		}
 		Format(sBuffer, sizeof(sBuffer), "执行 '%s' ?", cfgname);
 		SetBuiltinVoteArgument(g_hVote, sBuffer);
 		SetBuiltinVoteInitiator(g_hVote, client);
 		SetBuiltinVoteResultCallback(g_hVote, VoteResultHandler);
-		DisplayBuiltinVote(g_hVote, iPlayers, iNumPlayers, 20);
+		if (!DisplayBuiltinVote(g_hVote, iPlayers, iNumPlayers, 20))
+		{
+			delete g_hVote;
+			g_hVote = null;
+			CPrintToChat(client, "%t", "Vote_Process");
+			return false;
+		}
 		CPrintToChatAllEx(client, "%t", "Vote_Initiate", client);
 		return true;
 	}
@@ -436,16 +540,40 @@ public void VoteResultHandler(Handle vote, int num_votes, int num_clients, const
 		{
 			if (item_info[i][BUILTINVOTEINFO_ITEM_VOTES] >= (num_clients * 0.6))
 			{
-				if (vote == g_hVote)
+				char sCommand[PLATFORM_MAX_PATH];
+				strcopy(sCommand, sizeof(sCommand), g_sCfg);
+				if (sCommand[0] == '\0')
 				{
-					DisplayBuiltinVotePass(vote, "Loading cfg file...");
-					ServerCommand("%s", g_sCfg);
+					DisplayBuiltinVoteFail(vote, BuiltinVoteFail_Generic);
 					return;
 				}
+
+				DisplayBuiltinVotePass(vote, "Loading cfg file...");
+				ServerCommand("%s", sCommand);
+				ServerExecute();
+				if (IsWitchToggleCommand(sCommand))
+				{
+					CreateTimer(0.2, RestartCurrentMap, _, TIMER_FLAG_NO_MAPCHANGE);
+				}
+				return;
 			}
 		}
 	}
 	DisplayBuiltinVoteFail(vote, BuiltinVoteFail_Loses);
+}
+
+bool IsWitchToggleCommand(const char[] command)
+{
+	return StrEqual(command, "exec vote/witch_on.cfg", false)
+		|| StrEqual(command, "exec vote/witch_off.cfg", false);
+}
+
+public Action RestartCurrentMap(Handle timer)
+{
+	char map[PLATFORM_MAX_PATH];
+	GetCurrentMap(map, sizeof(map));
+	ForceChangeLevel(map, "Witch vote");
+	return Plugin_Stop;
 }
 	
 stock bool IsConnectedInGame(int client)
@@ -463,4 +591,3 @@ stock int GetPlayerCount(bool InGameOnly)
 	}
 	return (GetClientCount(InGameOnly) - BotNum);
 }
-
